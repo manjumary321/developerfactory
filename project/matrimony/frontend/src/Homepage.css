@@ -1,0 +1,228 @@
+.imagebackground{
+    width: 100%;
+    height: 100vh;
+    /* background-color: bisque; */
+    background-image: url("./images/home_christian1.gif");
+}
+
+.row1{
+   
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;;
+   
+}
+
+
+.row1col1{
+      display: flex;
+      width:10%;
+      text-align: left;
+    
+    
+}
+.row1col2{
+    display: flex;
+    width:70%;
+    flex-direction:column;
+    text-align: left;
+  
+}
+.row1col3{
+    display: flex;
+    flex-direction: row;
+    width:20%;
+    text-align: right;
+
+}
+.row1col3 button{
+    background-color: rgb(40, 40, 226);
+    border-radius: 6px;
+    border: 0cm;
+    padding: 2 px;
+    /* padding: 5px; */
+  
+    
+
+}
+.row1col3 button:hover{
+    background-color: rgb(27, 27, 97);
+    border-radius: 6px;
+    border: 0cm;
+    padding: 2 px;
+    /* padding: 5px; */
+}
+.row2{
+    width: 100%;
+    display: flex;
+    /* text-align: center; */
+    justify-content: space-evenly;
+    
+    height: 80vh;
+    /* scrollbar; */
+    
+}
+.innercontainer
+{
+    background-color:rgba(0, 0, 0, 0.469); 
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 50px;
+    width: 60%;
+    height: 50vh;
+    
+
+} 
+
+.row3{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20vh;
+}
+.innerrow3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 20px;
+}
+.row2col3{
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;  
+    /* height: 15vh; */
+    width: 100%;
+    border-radius:6px;
+    /* padding-bottom: 10px; */
+    /* padding:20px; */
+}
+
+.row2col1{
+   color: white;
+   text-align: left;width: 100%;
+}
+.row2col2{
+    color: white;
+    text-align: left;width: 100%;
+ }
+ .row2col4{
+    color: white;
+    text-align: right;width: 100%;
+ }
+ .matri{
+    padding-right: 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+ 
+    
+ }
+ .matri select{
+    border: 0px;
+    width: 100%;
+ }
+ .name{
+    padding-right: 5px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+ 
+ }
+ .name input{
+   /* padding:10px ; */
+    border: none;
+    width: 100%;
+ }
+ .mobile{
+    padding-right: 5px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+ 
+ }
+ .mobile input{
+   border: none;
+    width: 100%;
+ }
+ .register{
+    background-color: rgb(68, 68, 223);
+    /* padding-right: 5px; */
+    width: 40%;
+    padding-top: 20px;
+    justify-content: center;
+    /* padding-bottom: 10px; */
+    /* border-radius: ; */
+ }
+ .register:hover{
+   background-color: rgb(75, 75, 134);
+   /* padding-right: 5px; */
+   
+}
+ .register button{
+    border: 0px;
+    border-radius: 3px;
+    /* color: rgb(165, 165, 207); */
+    color: white;
+    width: 100%;
+    background-color: rgb(68, 68, 223);
+    
+ 
+ }
+ .register button:hover{
+    border: 0px;
+    border-radius: 3px;
+    /* color: rgb(74, 74, 242); */
+ 
+ }
+ .row3col1{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .row3col2{
+   width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+   
+    
+ }
+ .row3col3{
+   width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+   
+ }
+ .row3col4{
+   width: 20%;
+    padding: 10px;
+     display: flex;
+    flex-direction: column;
+ }
+ .row3col5 {
+   width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+ }
+ .row3col5 img,.row3col4 img,.row3col3 img,.row3col2 img,.row3col1 img{
+    width: 40%;
+    height: 80px;
+ }
+ .bluetext{
+   color:blue;
+ }

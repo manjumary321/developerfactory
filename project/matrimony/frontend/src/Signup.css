@@ -1,0 +1,96 @@
+.outer{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+  background-color: rgba(54, 54, 57, 0.055);
+ /* background-color: rgba(0, 0, 0, 0.404); */
+ width: 40%;
+ height: 80vh;
+ display: flex;
+ align-self: center;
+ margin-top: 50px;
+}
+.innercontainer{
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: left;
+   flex-direction: column;
+   margin-top:90px ;
+   border-top: 1px black;
+   padding: 20px;
+   padding-top: 30px;
+     
+}.row1{
+    
+    border: none;
+border-bottom: 1px solid  gray;
+
+}
+.login{
+    width:50%;
+    font-size: x-large;
+    color:black;
+    text-align: left;
+ padding: 20px;
+}
+.Matrimonyid{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+}
+.password{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+}
+.check{
+    display: flex;
+    flex-direction:row;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    padding-top: 20px;
+}
+.loginbutton{  
+    display: flex;
+    flex-direction:row;
+   justify-content: space-evenly;
+   width: 100%;
+   padding-top: 20px;}
+
+.loginbutton button{  
+  border: 0px;
+  background-color: rgb(220, 141, 44); 
+  color: white;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 6px;
+  padding: 10px;
+}
+.loginbutton button:hover
+{  
+    border: 0px;
+    background-color: rgb(154, 95, 23); 
+    color: white;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  .forget{  
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+   width: 100%;}
+  
