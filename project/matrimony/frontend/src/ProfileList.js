@@ -2,8 +2,14 @@ import './ProfileList.css'
 import imageprofile from './images/ezgif.com-gif-maker.jpg';
 import logo from './images/logo.jpg';
 import userpic from './images/userpic.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function ProfileList(){
+
+    const navigate=useNavigate();
+    const handleClick=(e)=>{
+        navigate('/Profile')
+    }
         return(
             <div class="outer">
                 <div class="banner">
@@ -37,7 +43,7 @@ function ProfileList(){
                 <div class="row2">
                     
 {/* -----                     */}
-                    <div class="profile">
+                    <div onClick={(e)=>handleClick(e)} class="profile">
                         <div class="rowcolumn1">
                             <img src={imageprofile}></img>
                         </div>

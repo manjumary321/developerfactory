@@ -26,7 +26,7 @@ function Signup(){
     }
         
     const handleClick=(e)=>{
-        alert("matrimony=>" + matrimony);navigate('/Profile');
+        alert("matrimony=>" + matrimony);navigate('/ProfileList');
     }
     
     return(
