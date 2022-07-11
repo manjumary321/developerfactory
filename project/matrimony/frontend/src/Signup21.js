@@ -54,6 +54,7 @@ function Signup21(){
   
   const handleClick6=(e)=>{
   navigate('/');
+  
   }
 //   const handleClick=(e)=>{
 //     alert("denomination"+ denomination);

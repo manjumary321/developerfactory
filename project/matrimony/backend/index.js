@@ -98,6 +98,7 @@ var con = mysql.createConnection(
     
 
     /*-------------------------------Login------------------------------*/
+
     app.post("/Login",(req,res)=>{
         var username = req.body.username;
         var password = req.body.password;
@@ -113,6 +114,37 @@ var con = mysql.createConnection(
 
         })
     })
+
+/*----------------------------ProflieList1----------------------------------*/
+
+app.post("/ProflieList1",(req,res)=>{
+   
+    sql="select * from tblusers";
+    con.query(sql,function (err, result){
+        if (err) 
+          console.log(err);
+        else {
+          console.log(result);
+          res.send(result);
+        }
+       })
+    })
+
+/*-----------------------------Proflie1----------------------------------------*/
+
+app.post("/Proflie1",(req,res)=>{
+    var id = req.body.id
+    sql="select id, txtUserName, txtHeight, txtGender,dtDOB,refReligion,refCaste,refMothertoungue, txtEmail, txtPassword, txtAddress, txtInterests, refEducation, refProfession, refState, txtProfileFor, blImage, txtMobile, txtSubcaste from tblusers where id = '" + id + "'";
+    con.query(sql,function (err, result){
+        if (err) 
+          console.log(err);
+        else {
+          console.log(result);
+          res.send(result);
+        }
+       })
+    })
+
 
 
     app.post("/select", (req, res)=>{
