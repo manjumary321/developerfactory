@@ -1,6 +1,7 @@
 import "./style1.css";
 import logo from "./image/logo.jpg";
 import trusted_newicon11 from "./image/trusted_newicon11.jpg";
+import { useNavigate } from 'react-router-dom';
 import {useState} from 'react';
 function Signup21(){
 
@@ -48,11 +49,12 @@ function Signup21(){
     setPassword(e.target.value)
   }
 
-//   const navigate=useNavigate();
-//   const handleclick=(e)=>{
-//     navigate('/')
-//   }
-
+  const navigate=useNavigate();
+  
+  
+  const handleClick6=(e)=>{
+  navigate('/');
+  }
 //   const handleClick=(e)=>{
 //     alert("denomination"+ denomination);
 //     navigate('/Register');
@@ -119,7 +121,7 @@ function Signup21(){
                                 <input onChange={(e)=>{handleChangePassword(e)}} value={password} type="password" placeholder=""></input>
                             </div>
                             <div class="continue">
-                                <button>Continue</button>
+                                <button onClick={(e)=>handleClick6(e)} >Continue</button>
                             </div>
                         </div>
 

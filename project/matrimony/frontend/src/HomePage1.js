@@ -29,6 +29,7 @@ function HomePage1() {
 
 
   const navigate=useNavigate();
+  
   const handleClick1=(e)=>{
     // localStorage.setItem()
     navigate('/Login')
@@ -37,7 +38,7 @@ function HomePage1() {
   const handleClick2=(e)=>{
     alert("name=>" + name+"  number=>" + number);
     navigate('/Signup21');
-}
+  }
 
   // const navigate1=useNavigate();
   // const handleClick2=(e)=>{
