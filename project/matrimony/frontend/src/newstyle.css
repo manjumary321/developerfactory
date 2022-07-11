@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+.row2{
+    padding: 100px;
+}
+.inner{
+    padding: 100px;
+    background-color:rgba(0, 0, 0, 0.442);
+    color: white;
+}

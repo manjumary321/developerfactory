@@ -1,0 +1,230 @@
+Assignment1--->MySQL Assignment School1:-
+
+
+
+create schema school1
+-------------------------------
+QUESTION: 1
+
+Create table ‘tblCountry’ with following columns as per data model.
+
+
+	create table tblCountry(
+	Id int not null auto_increment,
+    txtCountryName varchar(45),
+    primary key(id)
+    );
+
+------------------------------------------
+
+QUESTION: 2
+
+Create table ‘tblState’ with following columns as per data model.
+
+		create table tblState(
+		Id int not null auto_increment,
+        txtStateName varchar(45),
+        refCountry_Id int,
+        primary key(Id),
+        foreign key(refCountry_Id) references tblcountry(Id)
+        );
+		
+		
+---------------------------------------------
+
+QUESTION: 3
+
+Create table ‘tblDepartment’ with following columns as per data model.
+
+		create table tbldepartment(
+		Id int not null auto_increment,
+        txtDepartmentName varchar(45),
+        refSchoolid int,
+        primary key(Id),
+        foreign key (refSchoolid ) references tblschool(Id)
+   );
+
+----------------------------------------------------
+
+QUESTION: 4
+
+Create table ‘tblSchool’ with following columns as per data model.
+
+
+		create table tblSchool(
+		Id int not null auto_increment,
+        txtSchoolName varchar(45),
+        txtAddress Varchar(250),
+        refStateid int,
+        refCountryid int,
+        primary key(Id),
+        foreign key (refStateid) references tblstate(Id),
+        foreign key(refCountryid) references tblcountry(Id)
+   );
+
+
+-------------------------------------------------------------------------------
+
+QUESTION: 5
+
+Add the column ‘txtPhonenumber’ INT to the “tblSchools” table.
+
+	alter table tblschool
+	add  txtPhonenumber int
+	
+----------------------------------------------------------------------------------
+
+QUESTION: 6 
+
+Insert a new records in the "tblCountry" table by using INSERT INTO syntax.
+Sample data as follows.	
+
+insert into tblcountry(txtCountryName)
+values 
+('India'), ('China'), ('Pakistan'), ('Srilanka'), ('Bangladesh'),
+('USA'), ('England'), ('Russia'), ('Japan'), ('South Korea');
+
+output:
+
+Id    txtCountryName
+'1', 'India'
+'2', 'China'
+'3', 'Pakistan'
+'4', 'Srilanka'
+'5', 'Bangladesh'
+'6', 'USA'
+'7', 'England'
+'8', 'Russia'
+'9', 'Japan'
+'10', 'South Korea'
+
+
+------------------------------------------------------------------------------------
+
+QUESTION: 7 
+Insert a new records in the "tblState”
+
+
+
+insert into tblstate(txtStateName, refCountry_Id)
+values 
+('Kerala','1'), ('TamilNadu','1'), ('Karnataka','1'),
+('Telangana','1'), ('AndhraPradesh','1'), ('Fujian','2'), 
+('Hainan','2'), ('Hunan','2'), ('Yunnan','2'), 
+('Shandong','2'), ('alochistan','3'), ('Punjab','3'), 
+('Islamabad','3'), ('Khyber','3'), ('Anuradhapura','4'), 
+('Jaffna','4'), ('Kurunegala','4'), ('Ratnapura','4'), 
+('Dhaka','5'), ('Khulna','5'), ('Rangpur','5'), 
+('Mymensingh','5'), ('Sylhet','5'), ('Alabama','6'), 
+('Alaska', '6'), ('Arizona','6'), ('California','6'), 
+('Colorado','6'), ('New York','6'), ('Washington','6');
+
+
+output:-
+
+		Id, txtStateName, refCountry_Id
+		'1', 'Kerala', '1'
+		'2', 'TamilNadu', '1'
+		'3', 'Karnataka', '1'
+		'4', 'Telangana', '1'
+		'5', 'AndhraPradesh', '1'
+		'6', 'Fujian', '2'
+		'7', 'Hainan', '2'
+		'8', 'Hunan', '2'
+		'9', 'Yunnan', '2'
+		'10', 'Shandong', '2'
+		'11', 'alochistan', '3'
+		'12', 'Punjab', '3'
+		'13', 'Islamabad', '3'
+		'14', 'Khyber', '3'
+		'15', 'Anuradhapura', '4'
+		'16', 'Jaffna', '4'
+		'17', 'Kurunegala', '4'
+		'18', 'Ratnapura', '4'
+		'19', 'Dhaka', '5'
+		'20', 'Khulna', '5'
+		'21', 'Rangpur', '5'
+		'22', 'Mymensingh', '5'
+		'23', 'Sylhet', '5'
+		'24', 'Alabama', '6'
+		'25', 'Alaska', '6'
+		'26', 'Arizona', '6'
+		'27', 'California', '6'
+		'28', 'Colorado', '6'
+		'29', 'New York', '6'
+		'30', 'Washington', '6'
+
+--------------------------------------------------------
+
+QUESTION: 9
+
+Delete row from tblCountryName table where column ‘id’ is 5
+
+		SET foreign_key_checks = 0;
+		delete from tblcountry where Id =5;	
+		
+------------------------------------------------------------
+
+QUESTION: 10
+
+Delete row from tblCountryName table where column ‘txtCountryName’ is Russia	
+
+
+---------------------------------------------------------------
+
+QUESTION: 11
+
+Change data type in tblschool from table where column name  ‘txtPhonenumber’ from int to varchar(10)
+	
+	alter table tblschool
+    modify txtPhonenumber varchar(10)	
+
+------------------------------------------------------------------
+
+QUESTION: 12
+Insert into tblschool with values
+
+
+insert into tblschool(txtSchoolName,txtAddress,refStateid,txtphonenumber)
+values ("GrandPublicSchool","Ernakulam","1","8000"),
+		("GrandPublicSchool","Chennai","2","8001"),
+        ("GrandPublicSchool","Bangalore","3","8002"),
+        ("GrandPublicSchool","Hyderabad","4","8003"),
+        ("GrandPublicSchool","vijaywada","5","8004"),
+        ("GrandPublicSchool","Fujianu","6","9000"),
+        ("GrandPublicSchool","Hainanu","7","9001"),
+        ("GrandPublicSchool","Hunanu","8","9002"),
+        ("GrandPublicSchool","Hunanu","8","9002"),
+        ("GrandPublicSchool","Hunan","13","9003"),
+        ("GrandPublicSchool","Khyber","14","5001"),
+        ("GrandPublicSchool","Islama","15","5002"),
+        ("GrandPublicSchool","Fetehpur","16","5003"),
+        ("GrandPublicSchool","Dhakatwon","21","6000");
+		
+		
+		
+
+# id INT 	txtSchoolName VARCHAR(50)	txtAddress VARCHAR(50)	refStateid INT 	txtPhonenumber	
+1	GrandPublicSchool	Ernakulam	1	8000	
+2	GrandPublicSchool	Chennai	2	8001	
+3	GrandPublicSchool	Bangalore	3	8002	
+4	GrandPublicSchool	Hyderabad	4	8003	
+5	GrandPublicSchool	Vijaywada	5	8004	
+6	GrandPublicSchool	Fujianu	6	9000	
+7	GrandPublicSchool	Hainanu	7	9001	
+8	GrandPublicSchool	Hunanu	8	9002	
+9	GrandPublicSchool	Hunan	13	9003	
+10	GrandPublicSchool	Khyber	14	5001	
+11	GrandPublicSchool	Islama	15	5002	
+12	GrandPublicSchool	Fetehpur	16	5003	
+13	GrandPublicSchool	Dhakatown	21	6000	
+
+
+
+
+		
+---------------------------------------------------------------------------------
+
+QUESTION: 10
+Delete row from tblCountryName table where column ‘txtCountryName’ is Russia
+		

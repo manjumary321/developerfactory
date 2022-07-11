@@ -1,0 +1,487 @@
+Assignment1--->MySQL Assignment School2:-
+
+--------------------------------------------------
+QUESTION: 1 
+
+Find all country name from table tblCountry
+
+
+	create table tblcountry(
+		Id int not null auto_increment,
+		txtCountryName varchar(45),
+		primary key(id)
+		);
+	
+---
+	insert into tblcountry(txtCountryName)
+	values ("India"),("China"),("Pakistan"),("Srilanka"),("Bangladesh"),
+			("USA"),("England"),("Russia"),("Japan"),("South Korea");			
+			
+-----------------------------------------------------------------------------			
+
+		create table tblState(
+		Id int not null auto_increment,
+        txtStateName varchar(45),
+        refCountry_Id int,
+        primary key(Id),
+        foreign key(refCountry_Id) references tblcountry(Id)
+        );
+		
+		
+		insert into tblstate(txtStateName, refCountry_Id)
+		values 
+		('Kerala','1'), ('TamilNadu','1'), ('Karnataka','1'),
+		('Telangana','1'), ('AndhraPradesh','1'), ('Fujian','2'), 
+		('Hainan','2'), ('Hunan','2'), ('Yunnan','2'), 
+		('Shandong','2'), ('alochistan','3'), ('Punjab','3'), 
+		('Islamabad','3'), ('Khyber','3'), ('Anuradhapura','4'), 
+		('Jaffna','4'), ('Kurunegala','4'), ('Ratnapura','4'), 
+		('Dhaka','5'), ('Khulna','5'), ('Rangpur','5'), 
+		('Mymensingh','5'), ('Sylhet','5'), ('Alabama','6'), 
+		('Alaska', '6'), ('Arizona','6'), ('California','6'), 
+		('Colorado','6'), ('New York','6'), ('Washington','6');
+		
+		
+------------------------------------------------------------------------------
+
+QUESTION: 2 
+
+Find txtStateName from tblState where the id is 12	
+
+
+select txtStateName from tblstate where Id=12;
+
+
+
+output:
+ id     txtStateName
+ 12       'Punjab'
+
+
+--------------------------------------------------------------------------------
+
+
+QUESTION: 3
+
+Create table ‘tblemployeerole’ with following columns as per data model
+
+		create table tblemployeerole (
+		Id int not null auto_increment,
+		txtEmployeeRole varchar(45),
+		primary key(Id)
+		)
+
+------------------------------------------------------------------------------------
+
+table calssteacher
+
+		create table tblclassteacher(
+		ID INT NOT NULL auto_increment,
+        txtClassTeacher varchar(45),
+        primary key(Id)
+        );
+		
+		
+		
+		
+----------------------------------------------------------------------------------------
+
+QUESTION: 5
+
+Create table ‘tblclass’ with following columns as per data model
+
+
+				create table tblclass1(
+			Id int not null auto_increment,
+            txtClassName varchar(45),
+            txtDivision varchar(45),
+            refClassTeacher int,
+            refSchoolid int,
+            primary key (Id),
+			foreign key (refClassTeacher) references tblclassteacher(Id),
+            foreign key (refSchoolid) references tblschool(Id)
+            );
+		
+-----------------------------------------------------------------------------------
+
+
+QUESTION: 6
+
+
+Insert following data to table ‘tblemployeerole’   
+
+		insert into tblemployeerole(txtEmployeeRole)
+		values ('Apprentice'), ('Junior Lecturer'), ('Lab Assistant'), 
+			   ('Senior Lecturer'), ('HOD'), ('Principal'), ('Clerk'), 
+               ('Assistant Manager'), ('Manager'), ('Senior Manager'), 
+               ('Administrator');
+			   
+  
+			
+			  # Id	 txtEmployeeRole
+				1	Apprentice
+				2	Junior Lecturer
+				3	Lab Assistant
+				4	Senior Lecturer
+				5	HOD
+				6	Principal
+				7	Clerk
+				8	Assistant Manager
+				9	Manager
+				10	Senior Manager
+				11	Administrator
+
+------------------------------------------------------------------------------------------
+
+insert into tblschool(txtSchoolName,txtAddress,refStateid,txtphonenumber)
+values ("GrandPublicSchool","Ernakulam","1","8000"),
+		("GrandPublicSchool","Chennai","2","8001"),
+        ("GrandPublicSchool","Bangalore","3","8002"),
+        ("GrandPublicSchool","Hyderabad","4","8003"),
+        ("GrandPublicSchool","vijaywada","5","8004"),
+        ("GrandPublicSchool","Fujianu","6","9000"),
+        ("GrandPublicSchool","Hainanu","7","9001"),
+        ("GrandPublicSchool","Hunanu","8","9002"),
+        ("GrandPublicSchool","Hunanu","8","9002"),
+        ("GrandPublicSchool","Hunan","13","9003"),
+        ("GrandPublicSchool","Khyber","14","5001"),
+        ("GrandPublicSchool","Islama","15","5002"),
+        ("GrandPublicSchool","Fetehpur","16","5003"),
+        ("GrandPublicSchool","Dhakatwon","21","6000");
+		
+---------------------------------------------------------------------------------
+
+
+table tblDepartment
+
+		create table tbldepartment(
+		Id int not null auto_increment,
+        txtDepartmentName varchar(45),
+        refSchoolid int,
+        primary key(Id),
+        foreign key (refSchoolid ) references tblschool(Id)
+   );		
+   
+---------------------------------------------------------------------------------------
+
+Insert following data to table ‘tblDepartment’
+
+		insert into tbldepartment(txtDepartmentName,refSchoolid)
+		values 
+        ('Administration','1'), ('Finance','1'), ('Marketing','1'), 
+		('Human resources','1'), ('Teaching Faculty','1'), 
+		('Administration','2'), ('Finance','2'), ('Marketing','2'), 
+		('Human resources','2'), ('Teaching Faculty','2'), 
+        ('Administration','3'), ('Finance','3'), ('Marketing','3'), 
+        ('Human resources','3'), ('Teaching Faculty','3'), 
+        ('Administration','4'), ('Finance','4'), ('Marketing','4'), 
+        ('Human resources','4'), ('Teaching Faculty','4'), 
+        ('Administration','5'), ('Finance','5'), ('Marketing','5'), 
+        ('Human resources','5'), ('Teaching Faculty','5');
+
+
+
+			# Id	txtDepartmentName	refSchoolid
+				1	Administration		1
+				2	Finance				1
+				3	Marketing			1
+				4	Human resources		1
+				5	Teaching Faculty	1
+				6	Administration		2
+				7	Finance				2
+				8	Marketing			2
+				9	Human resources		2
+				10	Teaching Faculty	2
+				11	Administration		3
+				12	Finance				3
+				13	Marketing			3
+				14	Human resources		3
+				15	Teaching Faculty	3
+				16	Administration		4
+				17	Finance				4
+				18	Marketing			4
+				19	Human resources		4
+				20	Teaching Faculty	4
+				21	Administration		5
+				22	Finance				5
+				23	Marketing			5
+				24	Human resources		5
+				25	Teaching Faculty	5
+
+
+-----------------------------------------------------------------------------------
+
+
+QUESTION:4 
+
+ Create table ‘tblEmployee’ with following columns as per data model
+ 
+		create table tblemployee(
+				Id int not null auto_increment,
+                txtLastName varchar(45),
+                txtFirstName varchar(45),
+                txtAdress varchar(255),
+                txtCity varchar(255),
+                txtDateJoining date,
+                refSchoolid int,
+                refDepartmentid int,
+                refEmployeeRoleid int,
+                primary key(Id),
+                foreign key (refSchoolid) references tblschool(Id),
+                foreign key (refDepartmentid) references tbldepartment(Id),
+                foreign key (refEmployeeRoleid) references tblemployeerole(Id)
+                );
+   
+
+
+-----------------------------------------------------------------------------------
+
+QUESTION: 8
+
+Insert following data to table ‘tblEmployee’ 
+
+
+	insert into tblemployee(txtLastName,txtFirstName,txtAdress,txtCity,txtDateJoining,
+refDepartmentid,refEmployeeRoleid)
+values("Adams","Reily","AAAA","Kerala","2022-01-15","1","1"),
+	  ("Baker","Smith","AAAA","TamilNadu","2022-01-16","5","2"),
+      ("Clark","Trott","AAAA","Karnataka","2022-01-17","5","3"),
+      ("Davis","Usman","AAAA","Telangana","2022-01-18","2","11"),
+      ("Evans","Valdo","AAAA","AndhraPradesh","2022-01-19","5","4"),
+      ("Frank","White","AAAA","Fujian","2022-01-20","5","5"),
+      ("Ghosh","Xiang","AAAA","Hainan","2022-01-21","1","6"),
+      ("Hills","Yakub","AAAA","Hunan","2022-01-22","1","7"),
+      ("Irwin","Zafar","AAAA","Yunnan","2022-01-23","16","9"),
+      ("Jones","Adams","AAAA","Shandong","2022-01-24","2","10"),
+      ("Klein","Baker","AAAA","Balochistan","2022-01-25","3","11"),
+      ("Lopez","Clark","BBBB","Rangpur","2022-01-26","10","4"),
+      ("Mason","Davis","BBBB","Mymensingh","2022-01-27","10","5"),
+      ("Nalty","Evans","BBBB","Sylhet","2022-01-28","6","6"),
+      ("Ochoa","Frank","BBBB","Alabama","2022-01-29","6","7"),
+      ("Patel","Ghosh","BBBB","Alaska","2022-01-30","1","8"),
+      ("Quinn","Hills","CCCC","Arizona","2022-01-31","4","10"),
+	  ("Reily","Irwin","CCCC","California","2022-02-01","5","11"),
+      ("Smith","Jones","CCCC","Colorado","2022-02-02","15","4"),
+      ("Trott","Klein","CCCC","New York","2022-02-03","15","5"),
+	  ("Usman","Lopez","CCCC","Washington","2022-02-04","3","11"),
+      ("Valdo","Mason","DDDD","Jaffna","2022-02-05","20","4"),
+      ("White","Nalty","DDDD","Kurunegala","2022-02-06","20","5"),
+      ("Xiang","Ochoa","DDDD","Ratnapura","2022-02-07","11","6"),
+      ("Yakub","Patel","DDDD","Dhaka","2022-02-08","11","7"),
+      ("Zafar","Quinn","DDDD","Khulna","2022-02-09","3","1");
+	  
+	  
+	  
+	  
+	  # Id	txtLastName	txtFirstName	txtAdress	txtCity			txtDateJoining	refSchoolid	refDepartmentid	refEmployeeRoleid
+		1	Adams		Reily			AAAA		Kerala			2022-01-15						1				1
+		2	Baker		Smith			AAAA		TamilNadu		2022-01-16						5				2
+		3	Clark		Trott			AAAA		Karnataka		2022-01-17						5				3
+		4	Davis		Usman			AAAA		Telangana		2022-01-18						2				11
+		5	Evans		Valdo			AAAA		AndhraPradesh	2022-01-19						5				4
+		6	Frank		White			AAAA		Fujian			2022-01-20						5				5
+		7	Ghosh		Xiang			AAAA		Hainan			2022-01-21						1				6
+		8	Hills		Yakub			AAAA		Hunan			2022-01-22						1				7
+		9	Irwin		Zafar			AAAA		Yunnan			2022-01-23						16				9
+		10	Jones		Adams			AAAA		Shandong		2022-01-24						2				10
+		11	Klein		Baker			AAAA		Balochistan		2022-01-25						3				11
+		12	Lopez		Clark			BBBB		Rangpur			2022-01-26						10				4
+		13	Mason		Davis			BBBB		Mymensingh		2022-01-27						10				5
+		14	Nalty		Evans			BBBB		Sylhet			2022-01-28						6				6
+		15	Ochoa		Frank			BBBB		Alabama			2022-01-29						6				7
+		16	Patel		Ghosh			BBBB		Alaska			2022-01-30						1				8
+		17	Quinn		Hills			CCCC		Arizona			2022-01-31						4				10
+		18	Reily		Irwin			CCCC		California		2022-02-01						5				11
+		19	Smith		Jones			CCCC		Colorado		2022-02-02						15				4
+		20	Trott		Klein			CCCC		New York		2022-02-03						15				5
+		21	Usman		Lopez			CCCC		Washington		2022-02-04						3				11
+		22	Valdo		Mason			DDDD		Jaffna			2022-02-05						20				4
+		23	White		Nalty			DDDD		Kurunegala		2022-02-06						20				5
+		24	Xiang		Ochoa			DDDD		Ratnapura		2022-02-07						11				6
+		25	Yakub		Patel			DDDD		Dhaka			2022-02-08						11				7
+		26	Zafar		Quinn			DDDD		Khulna			2022-02-09						3				1
+		
+		
+		
+--------------------------------------------------------------------------------------------------------------------------------------
+
+	
+QUESTION: 10
+
+
+Find only the DISTINCT values from the "txtCity" column in the "tblEmployee" table
+
+select distinct txtCity from tblemployee;
+
+
+output
+
+# txtCity
+Kerala
+TamilNadu
+Karnataka
+Telangana
+AndhraPradesh
+Fujian
+Hainan
+Hunan
+Yunnan
+Shandong
+Balochistan
+Rangpur
+Mymensingh
+Sylhet
+Alabama
+Alaska
+Arizona
+California
+Colorado
+New York
+Washington
+Jaffna
+Kurunegala
+Ratnapura
+Dhaka
+Khulna
+
+
+----------------------------------------------------------
+
+QUESTION: 11 
+
+Select txtFirstName from the table tblEmployee where the txtCity is equal to Kerala.
+
+select txtFirstName from tblemployee where txtCity="kerala";
+
+output:-
+
+# txtFirstName
+Reily
+
+
+-------------------------------------------------------------------
+
+QUESTION: 13
+
+Select all details of employees from the table tblEmployee where txtdatejoining is between 2022-01-01 and 2022-01-31?
+
+
+between 2022-01-16 and 2022-01-18
+
+select txtFirstName,txtDateJoining from tblemployee where (txtDateJoining between '2022-01-16 00:00:00' AND '2022-01-18 00:00:00')
+
+output:-
+
+	# txtFirstName	txtDateJoining
+		Smith		2022-01-16
+		Trott		2022-01-17
+		Usman		2022-01-18
+		
+-----------------------------------------------------------------------------------------
+
+QUESTION: 12
+
+
+Select all details of employees from the table tblEmployee with employee role is apprentice.
+
+select txtFirstName FirstName ,txtEmployeeRole EmployeeRole
+from tblemployee em
+join tblemployeerole er  on  er.id = em. refEmployeeRoleid
+where txtEmployeeRole ="Apprentice"
+
+
+output:-
+
+	# FirstName	EmployeeRole
+		Reily	Apprentice
+		Quinn	Apprentice
+
+
+------------------------------------------------------------------------------------------
+
+
+QUESTION: 15
+
+Select all details of schools from the table tblSchool with country  is india
+
+
+	select  txtSchoolName School, txtAddress Address, txtStateName State,
+			txtCountryName Country, txtPhonenumber  phone
+	from tblschool sc 
+	join tblstate st  on  st.Id=sc.refStateid
+
+	join tblcountry ct on ct.Id=st.refCountry_Id
+	where txtCountryName="india" ;  
+
+
+
+output:-
+
+		# School			Address			State			Country		phone
+		GrandPublicSchool	Ernakulam		Kerala			India		8000
+		GrandPublicSchool	Chennai			TamilNadu		India		8001
+		GrandPublicSchool	Bangalore		Karnataka		India		8002
+		GrandPublicSchool	Hyderabad		Telangana		India		8003
+		GrandPublicSchool	vijaywada		AndhraPradesh	India		8004
+		
+------------------------------------------------------------------------------------------
+
+QUESTION: 7
+Remove column from table ‘tblemployee’
+
+QUESTION: 9
+Insert following data to table ‘tblclass’
+
+	id	txtClassname	txtDivision	refClassteacher	refSchoolid
+	1	1	A	5	1
+	2	1	B		1
+	3	1	C		1
+	4	1	D		1
+	5	2	A	12	2
+	6	2	B		2
+	7	2	C		2
+	8	2	D		2
+	9	3	A	19	3
+	10	3	B		3
+	11	3	C		3
+	12	3	D		3
+	13	4	A		4
+	14	4	B		4
+	15	4	C		4
+	16	4	D		4
+	17	5	A		1
+	18	5	B		1
+	19	5	C		1
+	20	5	D		1
+	21	1	A		3
+	22	1	B		3
+	23	1	C		3
+	24	1	D		3
+	25	2	A		3
+	26	2	B		3
+	27	2	C		3
+	28	2	D		3
+	29	3	A		5
+	30	3	B		5
+	31	3	C		5
+	32	3	D		5
+	33	4	A		5
+	34	4	B		5
+	35	4	C		5
+	36	4	D		5
+	37	5	A		6
+	38	5	B		6
+	39	5	C		6
+	40	5	D		6
+
+
+  
+QUESTION: 14
+Select all details of classes from the table tblClass with school=3
+		
+
+
+
+
+		
+		
