@@ -145,7 +145,20 @@ app.post("/Proflie1",(req,res)=>{
        })
     })
 
+/*----------------------------------search--------------------------------------*/
 
+app.post ("/search",(req,res)=>{
+    var username = req.body.username;
+    sql="select id, dtDOB,refReligion,refCaste,txtProfileFor from tblusers where txtUserName ='" + username +"'";
+    con.query(sql,function (err, result){
+        if (err) 
+          console.log(err);
+        else {
+          console.log(result);
+          res.send(result);
+        }
+       })
+})
 
     app.post("/select", (req, res)=>{
         var parametervariable=req.body.parameter;
