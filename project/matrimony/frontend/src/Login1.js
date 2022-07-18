@@ -1,6 +1,7 @@
 import "./style1.css";
 import { AiOutlineClose , AiFillBehanceCircle,AiFillBackward} from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import {useState} from 'react';
 function Login1(){
 
@@ -21,10 +22,34 @@ function Login1(){
     }
 
     const navigate3=useNavigate();
+
     const handleClick3=(e)=>{
-        alert("matrimony=>" + matrimony);
-        navigate3('/ProflieList1')
+        e.preventDefault()
+
+        const url = "http:/localhost:8000/Login1"
+        const request = {matrimony:matrimony,password:password};
+        const header = {};
+
+        axios.post(url,request,header)
+
+        .then((response)=>{
+            if(response.data.length>1){
+                console(JSON.stringify(response.data.length))
+                navigate3('/ProflieList1');
+            }
+            else{
+                alert("error : username" );
+            }
+         })
+
+        .carry((error)=>{
+            console(error)
+        })
     }
+    // const handleClick3=(e)=>{
+    //     alert("matrimony=>" + matrimony);
+    //     navigate3('/ProflieList1')
+    // }
 
     const navigate4=useNavigate();
     const handleClick4=(e)=>{
