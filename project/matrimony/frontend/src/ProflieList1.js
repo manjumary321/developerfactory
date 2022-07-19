@@ -73,6 +73,38 @@ function ProflieList1(){
                     </div>
                 </div>   
             </div>
+            <div  class="ProflieListrow2">
+            {/* <div onClick={(e)=>handleClick5(e)} class="ProflieListrow2"> */}
+                <div class="proflielist">
+                    <div class="proflielistrow2column1">
+                        <img src={imageprofile}></img>
+                    </div>
+                    <div class="proflielistrow2column2">
+                        <div class="pro1"><h2>WTTR**</h2></div>
+                            <div class="pro2">
+                                <div class="lab"><label>26 Years,5'5"</label></div>
+                                <div class="lab2"><label >BHMS</label></div>
+                            </div>
+                            <div class="pro3">
+                                <div class="lab"><label >Mumbai</label></div>
+                                <div class="lab2"><label >Doctor</label></div>
+                            </div>
+                            <div class="pro4">
+                                <div class="lab"><label >Hindu,Brahmin</label></div>
+                                <div class="lab2"><label >$ 0 - 1 Lakh</label></div>
+                            </div>
+                            <div class="pro5">
+                                <div class="lab"><label >Bhumihar</label></div>
+                                <div class="lab2"><label >-</label></div>
+                            </div>
+                            <div class="pro6">
+                                <div class="lab"><label >Hindi-UP/UK</label></div>
+                                <div class="lab2"><label >Never Married</label></div>
+                            </div>
+                    </div>
+                </div>   
+            </div>
+
 
 
         </div>

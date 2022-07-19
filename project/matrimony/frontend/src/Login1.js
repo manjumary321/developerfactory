@@ -1,10 +1,12 @@
 import "./style1.css";
-import { AiOutlineClose , AiFillBehanceCircle,AiFillBackward} from "react-icons/ai";
+import { AiOutlineClose} from "react-icons/ai";
+// import { AiOutlineClose , AiFillBehanceCircle,AiFillBackward} from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import {useState} from 'react';
 function Login1(){
 
+    const navigate3 =useNavigate();
     const [matrimony,setMatrimony]= useState('');
     const [password,setPassword] = useState('');
 
@@ -20,21 +22,22 @@ function Login1(){
     const handleCheckedChange=(e)=>{
         console.log('The checkbox was toggled');
     }
-
-    const navigate3=useNavigate();
+ 
 
     const handleClick3=(e)=>{
-        e.preventDefault()
+        e.preventDefault();
 
-        const url = "http:/localhost:8000/Login1"
-        const request = {matrimony:matrimony,password:password};
+        const url = "http://localhost:8000/Login";
+        // const request = {username:"bina",password:"rte"};
+        const request = {username:matrimony,password:password};
         const header = {};
 
         axios.post(url,request,header)
 
         .then((response)=>{
-            if(response.data.length>1){
-                console(JSON.stringify(response.data.length))
+            if(response.data.length>0){
+                //alert("succes")
+               console.log(JSON.stringify(response.data.length))
                 navigate3('/ProflieList1');
             }
             else{
@@ -46,6 +49,7 @@ function Login1(){
             console(error)
         })
     }
+
     // const handleClick3=(e)=>{
     //     alert("matrimony=>" + matrimony);
     //     navigate3('/ProflieList1')
@@ -79,7 +83,7 @@ function Login1(){
                 </div>
                 <div class="loginforget">
                     <label>Forgot Password? </label>
-                    <label> | </label>
+                    <label on> | </label>
                     <label> Login Via OTP</label>
                 </div>
 
