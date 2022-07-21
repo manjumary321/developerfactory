@@ -10,23 +10,24 @@ function Login1(){
     const [matrimony,setMatrimony]= useState('');
     const [password,setPassword] = useState('');
 
-        const handleMatrimonyChange=(e)=>{
+        const handleMatrimonyChange1=(e)=>{
         console.log(e.target.value)
         setMatrimony(e.target.value)
     }
-        const handlePasswordChange=(e)=>{
+        const handlePasswordChange1=(e)=>{
         console.log(e.target.value)
         setPassword(e.target.value)
     }
     
-    const handleCheckedChange=(e)=>{
+    const handleCheckedChange1=(e)=>{
         console.log('The checkbox was toggled');
     }
  
 
-    const handleClick3=(e)=>{
+    const handleClick9=(e)=>{
+        // alert("hi")
         e.preventDefault();
-
+        // alert("hello")
         const url = "http://localhost:8000/Login";
         // const request = {username:"bina",password:"rte"};
         const request = {username:matrimony,password:password};
@@ -46,7 +47,7 @@ function Login1(){
          })
 
         .carry((error)=>{
-            console(error)
+            console.log(error)
         })
     }
 
@@ -70,16 +71,16 @@ function Login1(){
             <div class="loginbody">
                 <div class="logininnerbody">
                     <label class ="loginlabel">Matrimony Id/Mobile No./E-mail</label>
-                    <input class="logininput" onChange={(e)=>{handleMatrimonyChange(e)}} value={matrimony} type="text"  placeholder='MatrimonyID'></input>
+                    <input class="logininput" onChange={(e)=>{handleMatrimonyChange1(e)}} value={matrimony} type="text"  placeholder='MatrimonyID'></input>
                     <label class ="loginlabel">Password</label>
-                    <input class="logininput" onChange={(e)=>{handlePasswordChange(e)}} value={password} type="text"  placeholder='Password'></input>
+                    <input class="logininput" onChange={(e)=>{handlePasswordChange1(e)}} value={password} type="text"  placeholder='Password'></input>
                 </div>
                 <div class="logincheck">
-                    <input onChange={(e)=>{handleCheckedChange(e)}} type="checkbox" placeholder=''></input> 
+                    <input onChange={(e)=>{handleCheckedChange1(e)}} type="checkbox" placeholder=''></input> 
                     <label>Keep me logged in</label>
                 </div>
                 <div class="loginbutton">
-                    <button onClick={(e)=>handleClick3(e)}>LOGIN</button>
+                    <button onClick={(e)=>handleClick9(e)}>LOGIN</button>
                 </div>
                 <div class="loginforget">
                     <label>Forgot Password? </label>

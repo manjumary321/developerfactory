@@ -75,7 +75,7 @@ var con = mysql.createConnection(
           con.query(sql,function(err,result){
               if(err)throw err
               res.send(result);
-              console.log("1 record insereted");
+              console.log("1 record inserted");
           })
       })
 /*-----------------------------Signup21-------------------------------------*/

@@ -9,7 +9,7 @@ function Proflie1(){
             <div class="Proflie1row1">
             <div class="menu1">
                     <div class ="pic">
-                        <img src={logo} ></img>
+                        <img src={logo} alt=""></img>
                     </div>
                     <div class ="menuul">
                             <ul>
@@ -21,7 +21,7 @@ function Proflie1(){
                             </ul>
                     </div>
                     <div class="userpic1">
-                            <img scr={userpic}></img>
+                            <img scr={userpic} alt=""></img>
                             <div class="logout1">
                                 <label>Logout</label>
                             </div>
@@ -31,7 +31,7 @@ function Proflie1(){
             <div class="Proflie1row2">
                 <div class="proflie1namerow1">
                     <div class="proflie1row1column1">
-                        <img src={imageprofile}></img>
+                        <img src={imageprofile} alt=""></img>
                     </div>
                     <div class="proflie1row1column2">
                         <div class="pro1">

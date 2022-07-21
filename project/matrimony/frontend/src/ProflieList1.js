@@ -12,13 +12,13 @@ function ProflieList1(){
     }
 
     return(
-        <div class="outer">
-            <div class="ProflieListrow1">
-                <div class="menu">
-                    <div class ="pic">
-                        <img src={logo} ></img>
+        <div className="outer">
+            <div className="ProflieListrow1">
+                <div className="menu">
+                    <div className ="pic">
+                        <img src={logo} alt=""></img>
                     </div>
-                    <div class ="menuul">
+                    <div className ="menuul">
                             <ul>
                                 <li>MY HOME</li>
                                 <li>SEARCH</li>
@@ -27,79 +27,79 @@ function ProflieList1(){
                                 <li>UPGRADE NOW</li>
                             </ul>
                     </div>
-                    <div class="userpic">
-                            <img scr={userpic}></img>
-                            <div class="logout">
+                    <div className="userpic">
+                            <img scr={userpic} alt=""></img>
+                            <div className="logout">
                                 <label>Logout</label>
                             </div>
                     </div>
                 </div>
-                <div class="search">
-                        <div class="searchtext">
+                <div className="search">
+                        <div className="searchtext">
                             <input text='text' placeholder=''></input>
                         </div>
-                        <div class="searchbutton">
+                        <div className="searchbutton">
                             <button>SEARCH</button>
                         </div>
                 </div>
             </div>
-            <div onClick={(e)=>handleClick5(e)} class="ProflieListrow2">
-                <div class="proflielist">
-                    <div class="proflielistrow2column1">
-                        <img src={imageprofile}></img>
+            <div onClick={(e)=>handleClick5(e)} className="ProflieListrow2">
+                <div className="proflielist">
+                    <div className="proflielistrow2column1">
+                        <img src={imageprofile} alt=""></img>
                     </div>
-                    <div class="proflielistrow2column2">
-                        <div class="pro1"><h2>WTTR**</h2></div>
-                            <div class="pro2">
-                                <div class="lab"><label>26 Years,5'5"</label></div>
-                                <div class="lab2"><label >BHMS</label></div>
+                    <div className="proflielistrow2column2">
+                        <div className="pro1"><h2>WTTR**</h2></div>
+                            <div className="pro2">
+                                <div className="lab"><label>26 Years,5'5"</label></div>
+                                <div className="lab2"><label >BHMS</label></div>
                             </div>
-                            <div class="pro3">
-                                <div class="lab"><label >Mumbai</label></div>
-                                <div class="lab2"><label >Doctor</label></div>
+                            <div className="pro3">
+                                <div className="lab"><label >Mumbai</label></div>
+                                <div className="lab2"><label >Doctor</label></div>
                             </div>
-                            <div class="pro4">
-                                <div class="lab"><label >Hindu,Brahmin</label></div>
-                                <div class="lab2"><label >$ 0 - 1 Lakh</label></div>
+                            <div className="pro4">
+                                <div className="lab"><label >Hindu,Brahmin</label></div>
+                                <div className="lab2"><label >$ 0 - 1 Lakh</label></div>
                             </div>
-                            <div class="pro5">
-                                <div class="lab"><label >Bhumihar</label></div>
-                                <div class="lab2"><label >-</label></div>
+                            <div className="pro5">
+                                <div className="lab"><label >Bhumihar</label></div>
+                                <div className="lab2"><label >-</label></div>
                             </div>
-                            <div class="pro6">
-                                <div class="lab"><label >Hindi-UP/UK</label></div>
-                                <div class="lab2"><label >Never Married</label></div>
+                            <div className="pro6">
+                                <div className="lab"><label >Hindi-UP/UK</label></div>
+                                <div className="lab2"><label >Never Married</label></div>
                             </div>
                     </div>
                 </div>   
             </div>
-            <div  class="ProflieListrow2">
-            {/* <div onClick={(e)=>handleClick5(e)} class="ProflieListrow2"> */}
-                <div class="proflielist">
-                    <div class="proflielistrow2column1">
-                        <img src={imageprofile}></img>
+            <div  className="ProflieListrow2">
+            {/* <div onClick={(e)=>handleClick5(e)} className="ProflieListrow2"> */}
+                <div className="proflielist">
+                    <div className="proflielistrow2column1">
+                        <img src={imageprofile} alt=""></img>
                     </div>
-                    <div class="proflielistrow2column2">
-                        <div class="pro1"><h2>WTTR**</h2></div>
-                            <div class="pro2">
-                                <div class="lab"><label>26 Years,5'5"</label></div>
-                                <div class="lab2"><label >BHMS</label></div>
+                    <div className="proflielistrow2column2">
+                        <div className="pro1"><h2>WTTR**</h2></div>
+                            <div className="pro2">
+                                <div className="lab"><label>26 Years,5'5"</label></div>
+                                <div className="lab2"><label >BHMS</label></div>
                             </div>
-                            <div class="pro3">
-                                <div class="lab"><label >Mumbai</label></div>
-                                <div class="lab2"><label >Doctor</label></div>
+                            <div className="pro3">
+                                <div className="lab"><label >Mumbai</label></div>
+                                <div className="lab2"><label >Doctor</label></div>
                             </div>
-                            <div class="pro4">
-                                <div class="lab"><label >Hindu,Brahmin</label></div>
-                                <div class="lab2"><label >$ 0 - 1 Lakh</label></div>
+                            <div className="pro4">
+                                <div className="lab"><label >Hindu,Brahmin</label></div>
+                                <div className="lab2"><label >$ 0 - 1 Lakh</label></div>
                             </div>
-                            <div class="pro5">
-                                <div class="lab"><label >Bhumihar</label></div>
-                                <div class="lab2"><label >-</label></div>
+                            <div className="pro5">
+                                <div className="lab"><label >Bhumihar</label></div>
+                                <div className="lab2"><label >-</label></div>
                             </div>
-                            <div class="pro6">
-                                <div class="lab"><label >Hindi-UP/UK</label></div>
-                                <div class="lab2"><label >Never Married</label></div>
+                            <div className="pro6">
+                                <div className="lab"><label >Hindi-UP/UK</label></div>
+                                <div className="lab2"><label >Never Married</label></div>
                             </div>
                     </div>
                 </div>   

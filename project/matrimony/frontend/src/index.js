@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Navigation from './Navigation';
+// import Test from './Test';
 // import Login1 from './Login1';
 // import HomePage1 from './HomePage1';
 // import Signup21 from './Signup21';
@@ -15,7 +16,8 @@ import Navigation from './Navigation';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navigation/>
+    <Navigation
+  />
   </React.StrictMode>
 );
 
