@@ -14,7 +14,7 @@ function Signup21() {
     const [gmail, setGmail] = useState('');
     const [password, setPassword] = useState('');
     const [id, setId] = useState(0)
-const navigate=useNavigate();
+    const navigate=useNavigate();
     useEffect(() => {
         let temp = localStorage.getItem("id")
         setId(temp)
@@ -61,18 +61,21 @@ const navigate=useNavigate();
     const handleClick6 = (e) => {
         e.preventDefault();
 
-        const url = "http://localhost:8000/Signup21";
+        // const url = "http://localhost:8000/Signup21";
+        const url="https://q9ufnd5xyf.execute-api.us-west-2.amazonaws.com/Signup";
         // const request = {username:"bina",password:"rte"};
-        const request = {
-            dateofmonth: dateofbirth,
-            religion: denomination,
-            caste: division,
-            subcaste: subcaste,
-            mothertoungue: mother,
-            gmail: gmail,
-            password: password,
-            id: id,
-        };
+        
+        const request = '{ "dateofmonth": "'+dateofbirth+'","religion": "'+denomination+'","caste":"'+division+'","subcaste":"'+subcaste+'","mothertoungue":"'+mother+'","gmail":"'+gmail+'","password":"'+password+'","id":"'+id+'"}';
+        // const request = {
+        //     dateofmonth: dateofbirth,
+        //     religion: denomination,
+        //     caste: division,
+        //     subcaste: subcaste,
+        //     mothertoungue: mother,
+        //     gmail: gmail,
+        //     password: password,
+        //     id: id,
+        // };
         const header = {};
 
         axios.post(url, request, header)
@@ -91,9 +94,9 @@ const navigate=useNavigate();
             })
 
 
-
-
     }
+
+    // arn:aws:lambda:us-west-2:981873018358:function:ProflieList
     //   const handleClick=(e)=>{
     //     alert("denomination"+ denomination);
     //     navigate('/Register');

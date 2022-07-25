@@ -17,9 +17,10 @@ function HomePage1() {
   const [profilefor, setProfilefor] = useState('');  //resigter
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
+  // const [id, setId] = useState(0)
 
-  const [matrimony, setMatrimony] = useState('');  //login
-  const [password, setPassword] = useState('');
+  // const [matrimony, setMatrimony] = useState('');  //login
+  // const [password, setPassword] = useState('');
 
 
   const handleChange4 = (e) => {     //resigter
@@ -35,75 +36,77 @@ function HomePage1() {
     setNumber(e.target.value)
   }
 
-
-
-  const handleMatrimonyChange = (e) => {     //login
-    console.log(e.target.value)
-    setMatrimony(e.target.value)
-  }
-  const handlePasswordChange = (e) => {     //login
-    console.log(e.target.value)
-    setPassword(e.target.value)
-  }
-
-  const handleCheckedChange = (e) => {          //login
-    console.log('The checkbox was toggled');
-  }
-
-
   const handleClick1 = (e) => {             //open model
     // localStorage.setItem()
     // navigate('/Login')
     setShow(true)
   }
 
-  const handleClick3 = (e) => {             //axios login
-    e.preventDefault();
+  // const handleMatrimonyChange = (e) => {     //login
+  //   console.log(e.target.value)
+  //   setMatrimony(e.target.value)
+  // }
+  // const handlePasswordChange = (e) => {     //login
+  //   console.log(e.target.value)
+  //   setPassword(e.target.value)
+  // }
 
-    const url = "http://localhost:8000/Login";
-    // const request = {username:"bina",password:"rte"};
-    const request = { username: matrimony, password: password };
-    const header = {};
+  // const handleCheckedChange = (e) => {          //login
+  //   console.log('The checkbox was toggled');
+  // }
 
-    axios.post(url, request, header)
 
-      .then((response) => {
-        if (response.data.length > 0) {
-          //alert("succes")
-          console.log(JSON.stringify(response.data.length))
-          navigate('/ProflieList1');
-        }
-        else {
-          alert("error : username");
-        }
-      })
+  
 
-      .carry((error) => {
-        console.log(error)
-      })
-  }
+  // const handleClick3 = (e) => {             //axios login
+  //   e.preventDefault();
+
+  //   const url = "http://localhost:8000/Login";
+  //   // const request = {username:"bina",password:"rte"};
+  //   const request = { username: matrimony, password: password };
+  //   const header = {};
+
+  //   axios.post(url, request, header)
+
+  //     .then((response) => {
+  //       if (response.data.length > 0) {
+  //         //alert("succes")
+  //         console.log(JSON.stringify(response.data.length))
+  //         navigate('/ProflieList1');
+  //       }
+  //       else {
+  //         alert("error : username");
+  //       }
+  //     })
+
+  //     .carry((error) => {
+  //       console.log(error)
+  //     })
+  // }
 
 
   const handleClick2 = (e) => {          // axios resigter 
     e.preventDefault();
 
-    const url = "http://localhost:8000/HomePage1";
-    const request = { profilefor: profilefor, username: name, mobile: number };
+    // const url = "http://localhost:8000/HomePage1";//
+    const url="https://0vza9dda7f.execute-api.us-west-2.amazonaws.com/Register";
+    const request = '{ "profilefor": "'+profilefor+'","username": "'+name+'", "mobile":"'+ number+'" }';
     const header = {};
 
     axios.post(url, request, header)
 
-      .then((response) => {
-        if (response.data.length !== 0) {
-          // alert("name=>" + name+"  number=>" + number);
-          console.log(JSON.stringify(response.data.length))
-          alert(JSON.stringify(response.data))
-          localStorage.setItem("id", response.data.insertId);
-          navigate('/Signup21');
-        }
-        else {
-          alert("error register");
-        }
+          .then((response) => {
+               if (response.data.length !== 0) {
+                // alert("name=>" + name+"  number=>" + number);
+                  console.log(JSON.stringify(response.data.length))
+                  alert(JSON.stringify(response.data))
+                  localStorage.setItem("id", response.data.insertId);
+                  alert("Registered")
+                  navigate('/Signup21');
+              }
+               else {
+                    alert("error register");
+              }
       })
 
       // .then((response)=>{
@@ -240,28 +243,28 @@ function Modal({ show, setShow }) {
   const handleClick3 = (e) => {             //axios login
     e.preventDefault();
 
-    const url = "http://localhost:8000/Login";
+    // const url = "http://localhost:8000/Login";
+const url="https://39ckr5heye.execute-api.us-west-2.amazonaws.com/newlogin"
     // const request = {username:"bina",password:"rte"};
-    const request = { username: matrimony, password: password };
+    const request ='{ "username":"'+matrimony+'", "password": "'+password+'" }';
     const header = {};
 
     axios.post(url, request, header)
 
-      .then((response) => {
-        if (response.data.length > 0) {
-          //alert("succes")
-          console.log(JSON.stringify(response.data.length))
-          navigate('/ProflieList1');
-        }
-        else {
-          alert("error : username");
-        }
-      })
+        .then((response) => {
+            if (response.data.length > 0) {
+              console.log(JSON.stringify(response.data.length))
+              navigate('/ProflieList1');
+          }
+          else {
+             alert("Incorrect username or password");
+              }
+        })
 
-      .carry((error) => {
-        console.log(error)
-      })
-  }
+        .carry((error) => {
+          console.log(error)
+        })
+      }
 
 
   return (<div className={show ? "modal" : "hidden"}>

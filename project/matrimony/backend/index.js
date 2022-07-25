@@ -92,6 +92,7 @@ var con = mysql.createConnection(
         var id = req.body.id;
                
         var sql ="update tblusers set dtDOB ='" + dateofmonth + "', refReligion = '" + religion + "', refCaste ='" + caste + "', txtSubcaste ='" + subcaste + "', refMothertoungue ='" + mothertoungue + "', txtEmail=' " + gmail + "', txtPassword ='" + password + "' where id ='" + id +  " ' ";
+          //  var sql ="update tblusers set dtDOB ='" + dateofmonth + "', txtReligion = '" + religion + "', txtCaste ='" + caste + "', txtSubcaste ='" + subcaste + "', txtMothertoungue ='" + mothertoungue + "', txtEmail=' " + gmail + "', txtPassword ='" + password + "' where id ='" + id +  " ' ";
         con.query(sql,function(err,result){
             if(err)throw err
             res.send(result); 
@@ -122,7 +123,7 @@ var con = mysql.createConnection(
 
 app.post("/ProflieList1",(req,res)=>{
    
-    sql="select * from tblusers";
+    sql="select * from tblusers ";
     con.query(sql,function (err, result){
         if (err) 
           console.log(err);
