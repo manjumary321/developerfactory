@@ -9,23 +9,43 @@ import axios from 'axios';
 function ProflieList1() {
 
     const navigate = useNavigate();
+    const [searchName, setSearch] = useState('');
     const [array, setArrayFunc] = useState([]);
 
-    const handleSearchClick=(e)=>{
+    const handleChangeSearch=(e) => {    //search
+        console.log(e.target.value)
+        setSearch(e.target.value)
+      }
+
+    const handleSearchClick=(e)=>{                  //Axios Search
         e.preventDefault();
         
         const url="https://7bvxd6p2x3.execute-api.us-west-2.amazonaws.com/Search"
-        const request={}
+        const request='{"username": "'+searchName+'"}';
         const header={}
 
         axios.post(url, request, header)
 
              .then((response)=>{
+                if (response.data.length !== 0) {
+                    console.log(JSON.stringify(response.data.length))
+                    console.log("result record")
+                    setArrayFunc(response.data)
+                    alert("result record")
+                    
+                }
+                else {
+                    alert("error result record");
+                }
+            })
+            .catch((error) => {
+                console.log(error)
+            })
                 
-             })   
+             }
 
 
-    }
+    
     
     const handleProflieClick = (e, item) => {
         e.preventDefault();
@@ -94,7 +114,7 @@ function ProflieList1() {
                 </div>
                 <div className="search">
                     <div className="searchtext">
-                        <input  text='text' placeholder=''></input>
+                        <input onChange={(e) => {handleChangeSearch(e) }} text={searchName} placeholder=''></input>
                     </div>
                     <div className="searchbutton">
                         <button onClick={(e) => handleSearchClick(e)}>SEARCH</button>
