@@ -1,0 +1,46 @@
+SELECT * FROM snowbird.tbltasks;
+
+SELECT dtEstStartDate FROM tbltasks
+WHERE dtEstStartDate BETWEEN '2022-05-12'  AND '2022-07-11';
+
+select DATE_FORMAT( dtEstStartDate, '%Y-%m-%d')as date FROM tbltasks
+WHERE dtEstStartDate BETWEEN '2022-05-12'  AND '2022-07-11'
+--------------------------------
+
+select count(*) ,txtStatus as completeddaily ,refAssignee from tbltasks where txtstatus='completed' group by refAssignee ;
+
+-------------
+ALTER TABLE tbltasks
+ADD storypointestimates int;
+
+----
+
+update tbltasks set txtStatus='to-do' where refAssignee=1;
+
+SET SQL_SAFE_UPDATES = 0;
+
+update tbltasks set txtStatus='completed' where refAssignee=5;
+-----
+
+SELECT 
+    refSprintid as SprintNo,dtActEndDate as Sprintdate, SUM(storyPointEst) as Actual
+FROM
+    tbltasks
+    where txtStatus="completed"
+
+GROUP BY dtActEndDate order by dtActEndDate asc ; 
+----
+SELECT 
+    refSprintid as SprintNo,dtEstEndDate as Sprintdate, SUM(storyPointEst) as PLan
+FROM
+    tbltasks
+
+GROUP BY dtActEndDate order by dtActEndDate asc ; 
+----------
+SELECT 
+    refSprintid as SprintNo,dtEstEndDate as Sprintdate, SUM(storyPointEst) as Actual
+FROM
+    tbltasks
+
+GROUP BY dtActEndDate order by dtActEndDate asc ; 
+------

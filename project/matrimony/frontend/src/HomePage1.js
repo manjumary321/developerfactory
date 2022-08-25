@@ -148,7 +148,7 @@ function HomePage1() {
             <button onClick={(e) => handleClick1(e)}>Login</button>
           </div>
         </div>
-        <div className="secondouter">
+        {/* <div className="secondouter"> */}
           <div className="homerow2" style={{ backgroundImage: `url(${bg})` }}>
             <div className="homecontainer">
               <div className="homeinnercontainer">
@@ -214,7 +214,7 @@ function HomePage1() {
             </div>
 
           </div>
-        </div>
+        {/* </div> */}
       </div></>
   );
 }
