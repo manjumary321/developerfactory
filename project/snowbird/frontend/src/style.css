@@ -129,3 +129,82 @@
     justify-content: space-evenly;
     margin-top: 30px;
 }
+/*------------------user delete--------*/
+.userdelete{
+    width: 70%;
+    background-color: rgb(235, 238, 238);
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+.tbl{
+    width: 100%;
+    padding: 10px;
+}
+.userheader{
+    
+    text-align: center;
+
+}
+.tbl .tr1{
+    width: 100%;
+    background-color: rgb(244, 252, 252);
+    border:none;
+}
+.tr1 .td{
+    width: 100%;
+    border: none;
+    /* text-align: center; */
+    justify-content: center;
+}
+.trl .th{
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+/*---------------------------------end-------------------------*/
+
+/*-----------------------user delete----------------------------*/
+.usercheckdelete{
+    width: 70%;
+    background-color: rgb(235, 238, 238);
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    padding: 10px;
+   
+    
+
+}
+.tbl1{
+    width: 100%;
+    padding: 10px;
+}
+.userCheckheader{
+    
+    text-align: center;
+
+}
+.tbl1 .tr11{
+    width: 100%;
+    background-color: rgb(244, 252, 252);
+    border:none;
+}
+.tr11 td{
+    width: 10%;
+    border: none;
+    /* text-align: center; */
+    
+    justify-content: center;
+}
+.trl1 th{
+    width: 60%;
+    border: none;
+    text-align: center;
+}
+.deletebutton{
+    width: 90%;
+    display: flex;
+    justify-content: right;
+    /* padding-right: 80px; */
+}
