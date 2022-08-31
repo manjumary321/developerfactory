@@ -105,7 +105,7 @@ function TestCheckDelete() {
                 </table>
                 
                 <div className="deletebutton">
-                    <button  onClick={(e) => handleDeleteClick(e)}>Delete</button>
+                    <button  onClick={(e) => handleDeleteClick(e,isChecked)}>Delete</button>
                 </div>
             </div>
 
