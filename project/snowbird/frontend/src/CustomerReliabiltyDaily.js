@@ -15,6 +15,7 @@ import axios from 'axios';
 import datalabels from "chartjs-plugin-datalabels";
 
 
+
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -82,15 +83,15 @@ function CustomerReliabiltyDaily() {
                     label: 'Planned Daily',
                     data: [5, 6, 3.5, 4.5, 4],
                     backgroundColor: '#4286F3',
-                    barPercentage: 1,
-                    categoryPercentage: .5
+                    barPercentage: .9,
+                    categoryPercentage: .6
                 },
                 {
                     label: 'Completed Daily',
                     data: [6, 2.5, 3, 5, 5.5],
                     backgroundColor: '#EA4235',
-                    barPercentage: 1,
-                    categoryPercentage: .5
+                    barPercentage: .9,
+                    categoryPercentage: .6
                 },
             ],
         }
