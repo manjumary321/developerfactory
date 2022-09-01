@@ -47,6 +47,7 @@ function TestCheckDelete() {
    
 
     const handleDeleteClick = (e,id)=> {
+       
         e.preventDefault();
         console.log(id)
         // on click of delete button  a function is called
@@ -62,6 +63,8 @@ function TestCheckDelete() {
                 {
                 console.log(id);
                 alert("result delete record");
+                 window.location.reload(false);
+
                 }
                 else
                 {
