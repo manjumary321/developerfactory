@@ -1,15 +1,13 @@
 /*-----------------------------InBetweenBanner1------------------------*/
 .InBetweenBanner1_banner1{
     background-color:#F1F0FF;
-    /* width: 1920px;
-    height: 579px; */
-    width: 100%;
+  
+    width: 120%;
     display: flex;
     justify-content:space-evenly ;
 }
 .InBetweenBanner1_ban1cont{
-    /* width: 1050px;
-    height: 550px; */
+
     width: 90%;
     display: flex;
     justify-content: space-evenly;
