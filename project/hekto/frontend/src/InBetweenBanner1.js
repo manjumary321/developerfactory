@@ -1,13 +1,16 @@
 import "./style.css";
 import Group153 from './images/Group153.png'
-// import Ellipse67 from './images/Ellipse67.png'
-
+// import Ellipse63 from './images/Ellipse63.png'
+// import SofaArmchairwithGoldenLegs1 from './images/SofaArmchairwithGoldenLegs1.png'
+ 
 function InBetweenBanner1() {
     return (
         <div className="InBetweenBanner1_banner1">
             <div className="InBetweenBanner1_ban1cont">
                 <div className="InBetweenBanner1_leftimg">
                     <img src={Group153}></img>
+                    {/* <img src={Ellipse63}></img>
+                    <img src={SofaArmchairwithGoldenLegs1}></img> */}
                 </div>
                 <div className="InBetweenBanner1_rgttxt">
                     <div className="InBetweenBanner1_rgttxtrow1"><label>Unique Features Of leatest & Trending Poducts</label></div>

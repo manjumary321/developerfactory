@@ -8,50 +8,54 @@
 }
 .InBetweenBanner1_ban1cont{
 
-    width: 90%;
+    width:80%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     justify-content: center;
-    margin-left:20px; 
+    margin-left:40px; 
     align-items: center;
     padding: 20px;
+
     
 }
 .InBetweenBanner1_leftimg{
     /* width:558 px;
     height:550 px; */
-    width: 45%;
+    width: 38%;
     padding:10px ;
     /* margin-top: 10px; */
     display: flex;
     justify-content: space-evenly;
-    margin-right: 20px;
+    margin-right: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .InBetweenBanner1_rgttxt{
-    width: 45%;
+    width: 43%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-   margin-bottom: 30px;
+    margin-bottom: 30px;
 
 }
 .InBetweenBanner1_rgttxtrow1 label{
     width: 100%;
     color: #151875;
+    font-family: 'Josefin Sans';
     font-size: 35px;
+    line-height: 46.2px;
     padding-bottom: 40px;
     padding-top: 10px;
     display: flex;
-    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
-   
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    text-shadow: 0px 2px 5px black;
 }
 .InBetweenBanner1_rgttxtrow2{
     width: 100%;
 
     display: flex;
     color: #ACABC3;
-    font-size: 16px;
+    font-size: 5px;
     font-style: normal;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,6 +63,7 @@
 
 }
 .InBetweenBanner1_circle1{
+    width: 5%;
     background-color: #F52B70;
     width: 11px;
     height: 11px;
@@ -70,6 +75,7 @@
 
 }
 .InBetweenBanner1_circle2{
+    width: 5%;
     background-color: #2B2BF5;
     width: 11px;
     height: 11px;
@@ -81,6 +87,7 @@
 
 }
 .InBetweenBanner1_circle3{
+    width: 5%;
     background-color: #2BF5CC;
     width: 11px;
     height: 11px;
@@ -92,13 +99,15 @@
 }
 
 .InBetweenBanner1_rgttxtrow2 label{
-    width: 100%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 95%;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content:left;
     margin-bottom: 5px;
     padding-left: 10px;
     text-align: left;
+    
     line-height:25px;
     font-size:18px;
    
@@ -134,7 +143,8 @@
     flex-direction:column;
     justify-content: left;
     margin-left: 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 

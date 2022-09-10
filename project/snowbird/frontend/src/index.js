@@ -6,7 +6,8 @@ import ReactDOM from 'react-dom/client';
 // import CustomerReliabiltyDaily1 from './CustomerReliabiltylDaily1';
 //import TestDelete from './TestDelete';
 // import TestCheckDelete from './TestCheckDelete';
-import Testplanningdaily from './Testplanningdaily';
+// import Testplanningdaily from './Testplanningdaily';
+import Onam from './onam.js'
 
 
 
@@ -15,7 +16,7 @@ import Testplanningdaily from './Testplanningdaily';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Testplanningdaily/>
+    <Onam/>
   </React.StrictMode>
 );
 
