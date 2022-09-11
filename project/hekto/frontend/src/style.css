@@ -153,3 +153,132 @@
 
 
 /*------------------------------End--InBetweenBanner1------------------------*/
+
+/* -----------------------Start----LatestProducts--------------------------- */
+.LatestProducts_outer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+}
+.LatestProducts_header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #151875;
+    font-family: monospace;
+    font-size: 42px;
+    line-height: 49.22px;
+    /* position:absolute; */
+    margin-top: 10px;
+    padding: 10px;
+
+}
+.LatestProducts_secondmenu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* position: absolute; */
+
+
+}
+.LatestProducts_innersecondmenu{
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+   padding-top: 5px;
+   padding-bottom: 5px;
+    margin-left: 20px;
+    position: absolute;
+}
+.LatestProducts_Arrival{
+    /* width: 20%; */
+    color:#FB2E86;
+    font-family:'Lato' ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:21.6px;
+    border-bottom: 2px solid #FB4997;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.LatestProducts_Seller{
+    /* width: 20%; */
+    color:#151875;
+    font-family:'Lato' ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:21.6px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.LatestProducts_Featured{
+    /* width: 20%; */
+    color:#151875;
+    font-family:'Lato' ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:21.6px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.LatestProducts_Offer{
+    /* width: 20%; */
+    color:#151875;
+    font-family:'Lato' ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:21.6px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.LatestProducts_outerimage{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    margin-top: 70px;
+    
+}
+.LatestProducts_inneroutimage1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.LatestProducts_inneroutimage2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.LatestProducts_inninnerimage11{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+.LatestProducts_image1166{
+    width: 100%;
+    background-color: #F7F7F7;
+
+}
+.LatestProducts_image1166 img{
+    width: 70%;
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.LatestProducts_bottomimage1166{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
