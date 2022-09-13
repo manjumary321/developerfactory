@@ -6,7 +6,7 @@ import image23 from './images/image23.png'
 import image32 from './images/image32.png'
 import image3 from './images/image3.png'
 import Group27 from './images/Group27.png'
-import Groupcart from './images/Groupcart.png';
+import Groupcart2 from './images/Groupcart2.png';
 import Vector from './images/Vector.png'
 import uil_search_plus from './images/uil_search_plus.png'
 function LatestProducts() {
@@ -33,7 +33,7 @@ function LatestProducts() {
 
                                 </div>
                                 <div className="LatestProducts_imagecol1row2">
-                                    <div className="LatestProducts_imageicons1"><img src={Groupcart}></img></div>
+                                    <div className="LatestProducts_imageicons1"><img src={Groupcart2}></img></div>
                                     <div className="LatestProducts_imageicons2"><img src={Vector}></img></div>
                                     <div className="LatestProducts_imageicons2"><img src={uil_search_plus}></img></div>
                                 </div>
