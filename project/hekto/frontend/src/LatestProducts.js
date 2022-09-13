@@ -54,6 +54,17 @@ function LatestProducts() {
                     </div>
                     <div className="LatestProducts_inninnerimage">
                         <div className="LatestProducts_inninnerimage_row">
+                            <div className="LatestProducts_imagecol1">
+                                <div className="LatestProducts_imagecol1row1">
+                                    <img src={Group27}></img>
+
+                                </div>
+                                <div className="LatestProducts_imagecol1row2">
+                                    <div className="LatestProducts_imageicons1"><img src={Groupcart2}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={Vector}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={uil_search_plus}></img></div>
+                                </div>
+                            </div>
                             <div className="LatestProducts_imagecol2" >
                                 <img src={image15}></img>
                             </div>
@@ -71,6 +82,17 @@ function LatestProducts() {
                     </div>
                     <div className="LatestProducts_inninnerimage">
                         <div className="LatestProducts_inninnerimage_row">
+                            <div className="LatestProducts_imagecol1">
+                                <div className="LatestProducts_imagecol1row1">
+                                    <img src={Group27}></img>
+
+                                </div>
+                                <div className="LatestProducts_imagecol1row2">
+                                    <div className="LatestProducts_imageicons1"><img src={Groupcart2}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={Vector}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={uil_search_plus}></img></div>
+                                </div>
+                            </div>
                             <div className="LatestProducts_imagecol2" >
                                 <img src={image1168}></img>
                             </div>
@@ -89,11 +111,22 @@ function LatestProducts() {
                 </div>
                 <div className="LatestProducts_inneroutimage2">
                     <div className="LatestProducts_inninnerimage">
-                    <div className="LatestProducts_inninnerimage_row">  
-                        <div className="LatestProducts_imagecol" >
-                            <img src={image23}></img>
+                        <div className="LatestProducts_inninnerimage_row">
+                        <div className="LatestProducts_imagecol1">
+                                <div className="LatestProducts_imagecol1row1">
+                                    <img src={Group27}></img>
+
+                                </div>
+                                <div className="LatestProducts_imagecol1row2">
+                                    <div className="LatestProducts_imageicons1"><img src={Groupcart2}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={Vector}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={uil_search_plus}></img></div>
+                                </div>
+                            </div>
+                            <div className="LatestProducts_imagecol" >
+                                <img src={image23}></img>
+                            </div>
                         </div>
-                      </div>  
                         <div className="LatestProducts_bottomimagecol">
                             <div className="LatestProducts_botlftimagecol">
                                 <label>Comfort Handy Craft</label>
@@ -107,10 +140,21 @@ function LatestProducts() {
 
                     </div>
                     <div className="LatestProducts_inninnerimage">
-                    <div className="LatestProducts_inninnerimage_row">
-                        <div className="LatestProducts_imagecol2" >
-                            <img src={image32}></img>
-                        </div>
+                        <div className="LatestProducts_inninnerimage_row">
+                        <div className="LatestProducts_imagecol1">
+                                <div className="LatestProducts_imagecol1row1">
+                                    <img src={Group27}></img>
+
+                                </div>
+                                <div className="LatestProducts_imagecol1row2">
+                                    <div className="LatestProducts_imageicons1"><img src={Groupcart2}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={Vector}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={uil_search_plus}></img></div>
+                                </div>
+                            </div>
+                            <div className="LatestProducts_imagecol2" >
+                                <img src={image32}></img>
+                            </div>
                         </div>
                         <div className="LatestProducts_bottomimagecol">
                             <div className="LatestProducts_botlftimagecol">
@@ -124,10 +168,21 @@ function LatestProducts() {
 
                     </div>
                     <div className="LatestProducts_inninnerimage">
-                    <div className="LatestProducts_inninnerimage_row">
-                        <div className="LatestProducts_imagecol2" >
-                            <img src={image3}></img>
-                        </div>
+                        <div className="LatestProducts_inninnerimage_row">
+                        <div className="LatestProducts_imagecol1">
+                                <div className="LatestProducts_imagecol1row1">
+                                    <img src={Group27}></img>
+
+                                </div>
+                                <div className="LatestProducts_imagecol1row2">
+                                    <div className="LatestProducts_imageicons1"><img src={Groupcart2}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={Vector}></img></div>
+                                    <div className="LatestProducts_imageicons2"><img src={uil_search_plus}></img></div>
+                                </div>
+                            </div>
+                            <div className="LatestProducts_imagecol2" >
+                                <img src={image3}></img>
+                            </div>
                         </div>
                         <div className="LatestProducts_bottomimagecol">
                             <div className="LatestProducts_botlftimagecol">
