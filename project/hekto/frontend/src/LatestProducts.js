@@ -1,16 +1,17 @@
 import "./style.css";
-import image1166 from './images/image1166.png'
-import image15 from './images/image15.png'
-import image1168 from './images/image1168.png'
-import image23 from './images/image23.png'
-import image32 from './images/image32.png'
-import image3 from './images/image3.png'
-import Group27 from './images/Group27.png'
-import Groupcart2 from './images/Groupcart2.png';
-import Vector from './images/Vector.png'
-import uil_search_plus from './images/uil_search_plus.png'
+import image1166 from './Images/image1166.png'
+import image15 from './Images/image15.png'
+import image1168 from './Images/image1168.png'
+import image23 from './Images/image23.png'
+import image32 from './Images/image32.png'
+import image3 from './Images/image3.png'
+import Group27 from './Images/Group27.png'
+import Groupcart2 from './Images/Groupcart2.png';
+import Vector from './Images/Vector.png'
+import uil_search_plus from './Images/uil_search_plus.png'
 function LatestProducts() {
     return (
+     <> 
         <div className="LatestProducts_outer">
             <div className="LatestProducts_header">
                 <label>Leatest Products</label>
@@ -198,6 +199,7 @@ function LatestProducts() {
                 </div>
             </div>
         </div>
+    </>     
     )
 }
 export default LatestProducts;
