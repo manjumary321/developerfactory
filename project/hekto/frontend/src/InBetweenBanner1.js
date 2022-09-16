@@ -17,14 +17,12 @@ function InBetweenBanner1() {
                     </div>
                     <div className="InBetweenBanner1_righttext_col2_row2">
                         <div className="InBetweenBanner1_circle1_col2_row2"></div>
-                        <div>
-                             <label>All frames constructed with hardwood solids and laminates</label>
-                        </div>
+                          <label>All frames constructed with hardwood solids and laminates</label>
                     </div>    
                     <div className="InBetweenBanner1_righttext_col2_row2">
                         <div className="InBetweenBanner1_circle2_col2_row2"></div>
-                        <label>Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails</label>
-                    </div>
+                             <label>Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails</label>
+                        </div>
                     <div className="InBetweenBanner1_righttext_col2_row2">
                         <div className="InBetweenBanner1_circle3_col2_row2"></div>
                         <label>Arms, backs and seats are structurally reinforced</label>
