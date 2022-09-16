@@ -1,13 +1,15 @@
-import "./ExmReapeatCom.js";
+import "./ExmReapeatcom.css";
 import LatestProduct_chair1 from './Images/LatestProduct_chair1.png'
+import LatestProducts_chair2 from './Images/LatestProducts_chair2.png'
+import LatestProducts_chair3 from './Images/LatestProducts_chair3.png'
 import LatestProducts_icons1 from './Images/LatestProducts_icons1.png'
 import LatestProducts_icons2 from './Images/LatestProducts_icons2.png';
 import LatestProducts_icons3 from './Images/LatestProducts_icons3.png'
 import LatestProducts_icons4 from './Images/LatestProducts_icons4.png'
 
-function ReapeatComponent(image){
+function ReapeatComponent({image}){
     return <>
-    <div>
+    <div className="wwww">
      <label>LatestProducts</label>
      <img src={image}></img>
     </div>
@@ -15,14 +17,16 @@ function ReapeatComponent(image){
 
 }
 
+
+
 function ExmReapeatCom(){
     return(
     <>
             <div className="outer">
                         <div className="wwww">
-                                 {/* <ReapeatComponent image={LatestProduct_chair1}/>
-                                 <ReapeatComponent/>
-                                 <ReapeatComponent/> */}
+                                 <ReapeatComponent image={LatestProduct_chair1}/>
+                                 <ReapeatComponent image={LatestProducts_chair2}/>
+                                 <ReapeatComponent image={LatestProduct_chair1}/>
                         </div>
                         <div className="LatestProducts_inner_top_image_row1">
                             <div className="LatestProducts_icons_row1_col1">

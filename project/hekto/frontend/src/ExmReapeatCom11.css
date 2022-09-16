@@ -85,7 +85,6 @@
     justify-content: space-evenly;
     flex-direction: column;
     padding-bottom: 10px;
-
 }
 
 .LatestProducts_inner_top_image_row1 {
@@ -269,16 +268,22 @@
     
     
 }
+
 /* ----------------- */
 
 .outer{
     width: 100%;
-    height: 50%;
-    
-    background-color: rgb(4, 105, 71);
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+
 }
-.wwww{
-    width: 70%;
-    height: 50vh;
-    background-color: rgb(238, 144, 20);
+.container{
+    width: 30%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
 }

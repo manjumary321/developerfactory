@@ -48,7 +48,7 @@
 .InBetweenBanner1_righttext_col2_row1 label {
     width: 100%;
     color: #151875;
-    font-family: 'Josefin Sans';
+    font-family:"segoe ui";
     font-size: 35px;
     line-height: 46.2px;
     padding-bottom: 40px;
@@ -118,7 +118,7 @@
     margin-bottom: 5px;
     padding-left: 10px;
     text-align: left;
-    font-size: "lato";
+    font-size: "segoe ui";
     font-weight: 500px;
     font-size: 22px;
     line-height: 30.12px;
@@ -187,7 +187,7 @@
     /* padding: 5px; */
     display: flex;
     justify-content: left;
-    font-family: "lato";
+    font-family:"segoe ui";
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
