@@ -1,5 +1,5 @@
-import "./ExmReapeatCom11.css";
-import LatestProducts_chair1 from './Images/LatestProduct_chair1.png'
+import "./LatestProducts11.css";
+import LatestProducts_chair1 from './Images/LatestProducts_chair1.png'
 import LatestProducts_chair2 from './Images/LatestProducts_chair2.png'
 import LatestProducts_chair3 from './Images/LatestProducts_chair3.png'
 import LatestProducts_chair4 from './Images/LatestProducts_chair4.png'
@@ -10,11 +10,10 @@ import LatestProducts_icons2 from './Images/LatestProducts_icons2.png';
 import LatestProducts_icons3 from './Images/LatestProducts_icons3.png'
 import LatestProducts_icons4 from './Images/LatestProducts_icons4.png'
 
-function ReapeatComponent({ image }) {
-    return <>
-        <div className="LatestProducts_container">
-        <div className="LatestProducts_inner_inner_imagefull">  
-
+function LatestProduct_chair({images}){
+return <>
+    <div className="LatestProducts_inner_outerimage1_container1_row1">
+        <div className="LatestProducts_inner_inner_imagefull">
             <div className="LatestProducts_inner_top_image_row1">
                 <div className="LatestProducts_icons_row1_col1">
                     <div className="LatestProducts_icon_imgsale_col1_row1">
@@ -28,7 +27,7 @@ function ReapeatComponent({ image }) {
                     </div>
                 </div>
                 <div className="LatestProducts_imgchair_col2" >
-                    <img src={image}></img>
+                    <img src={images}></img>
                 </div>
             </div>
             <div className="LatestProducts_bottom_imgchair_text_row2">
@@ -40,31 +39,45 @@ function ReapeatComponent({ image }) {
                     <span>$65.00</span>
                 </div>
             </div>
-          </div>
         </div>
 
-    </>
+    </div>
 
+</>
 }
 
-function ExmReapeatCom11() {
+
+
+function LatestProducts11() {
     return (
         <>
-            <div className="LatestProducts_outer"> 
-                <ReapeatComponent image={LatestProduct_chair1} />
-                <ReapeatComponent image={LatestProducts_chair2} />
-                <ReapeatComponent image={LatestProducts_chair3} />
-                {/* <ReapeatComponent image={LatestProduct_chair1} />
-                <ReapeatComponent image={LatestProducts_chair2} />
-                <ReapeatComponent image={LatestProducts_chair3} /> */}
- 
-                <ReapeatComponent image={LatestProducts_chair4} />
-                <ReapeatComponent image={LatestProducts_chair5} />
-                <ReapeatComponent image={LatestProducts_chair6} />
-            
+            <div className="LatestProducts_outer">
+                <div className="LatestProducts_header">
+                    <label>Leatest Products</label>
+                </div>
+                <div className="LatestProducts_menu">
 
+                    <label className="LatestProducts_menu_col">New Arrival</label>
+                    <label className="LatestProducts_menu_col">Best Seller</label>
+                    <label className="LatestProducts_menu_col">Featured</label>
+                    <label className="LatestProducts_menu_col">Special Offer</label>
+
+                </div>
+                {/* ----------------------------container--outer---------------------- */}
+                <div className="LatestProducts_outerimage_container">
+                    <LatestProduct_chair images={LatestProducts_chair1}/>
+                    <LatestProduct_chair images={LatestProducts_chair2}/>
+                    <LatestProduct_chair images={LatestProducts_chair3}/>
+                    <LatestProduct_chair images={LatestProducts_chair4}/>
+                    <LatestProduct_chair images={LatestProducts_chair5}/>
+                    <LatestProduct_chair images={LatestProducts_chair6}/>
+                    
+                   
+                   
+                </div>  
+                {/* ------------end---------container--outer----------------------- */}
             </div>
         </>
     )
 }
-export default ExmReapeatCom11;
+export default LatestProducts11;

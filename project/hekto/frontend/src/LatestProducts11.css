@@ -6,7 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     position: absolute;
     align-items: center;
 }
@@ -54,7 +54,8 @@
 
 .LatestProducts_outerimage_container {
     width: 100%;
-    display: flex;
+    /* display: flex; */
+    display:table;
     justify-content: space-evenly;
     flex-direction: column;
     margin-top: 70px;
@@ -63,9 +64,10 @@
 
 .LatestProducts_inner_outerimage1_container1_row1{
     width: 100%;
-    display: flex;
+    /* display: flex; */
+    display: inline-table;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 60px;
 }
 
@@ -80,13 +82,12 @@
 
 
 .LatestProducts_inner_inner_imagefull {
-    width: 95%;
+    width: 30%;
     display: flex;
-    /* display: inline-table; */
-
     justify-content: space-evenly;
     flex-direction: column;
     padding-bottom: 10px;
+
 }
 
 .LatestProducts_inner_top_image_row1 {
@@ -269,25 +270,4 @@
     padding-left: 10px;
     
     
-}
-
-/* ----------------- */
-
-.LatestProducts_outer{
-    width: 100%;
-    background-color: aquamarine;
-    /* display: flex; */
-    display: table;
-    justify-content: space-evenly;
-    flex-direction:row;
-
-}
-.LatestProducts_container{
-    width: 30%;
-    background-color: antiquewhite;
-    /* display:flex; */
-    display: inline-table;
-    justify-content: space-evenly;
-    flex-direction: column;
-
 }
