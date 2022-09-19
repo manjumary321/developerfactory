@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.Rating_outer{
+    width: 40%;
+    /* background-color: #F5F5F5; */
+    /* background-color: #f4f4fc; */
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.Rating_outer_container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+.Rating_inner_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction:column;
+    /* margin: 15px; */
+}
+/* --------------row1--------- */
+.Rating_inncont_row1{
+    width: 100%;
+    background-color: #f4f4fc;
+    display: flex;
+    justify-content: left;
+    flex-direction:column;
+    /* padding-left: 15px; */
+    margin: 15px;
+
+    
+  
+
+}
+.Rating_inncont_row1_row1{
+    width: 85%;
+    display: flex;
+    justify-content: left;
+    padding-bottom:5px;
+    border-bottom: 2px solid #E8E6F1;
+    margin: 25px;
+}
+.Rating_inncont_row1_row1 label{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: #9295AA;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500px;
+    font-size: 22px;
+    line-height: 30.12px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+
+.Rating_inncont_row1_row2{
+    width: 85%;
+    display: flex;
+    justify-content:left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.Rating_inncont_row1_row2 img{
+    width: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+/* --------------row2--------- */
+
+.Rating_inncont_row2{
+    width: 100%;
+    background-color: #f4f4fc;
+    display: flex;
+    justify-content: left;
+    flex-direction:column;
+    /* padding-left: 15px; */
+    margin: 15px;
+
+}
+.Rating_inncont_row2_row1{
+    width: 85%;
+    display: flex;
+    justify-content: left;
+    padding-bottom:5px;
+    border-bottom: 2px solid #E8E6F1;
+    margin: 25px;
+}
+.Rating_inncont_row2_row1 label{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: #9295AA;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500px;
+    font-size: 22px;
+    line-height: 30.12px;
+    text-align: left;
+    padding-bottom: 10px;
+
+} 
+.Rating_inncont_row2_row2{
+    width: 85%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+.Rating_inncont_row2_row2 input{
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    padding-bottom: 100px;
+    margin-left: 20px;
+    padding-right: 90px;
+
+}
+
+/* --------------row3---button------ */
+.Rating_inncont_row3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: 25px;
+
+}
+.Rating_inncont_row3 button{
+    width: 100%;
+    background-color: #FB2E86;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family:"segoe ui";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 20px;
+    margin-left: 170px;
+}
+
+

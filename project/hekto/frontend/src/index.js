@@ -12,12 +12,13 @@ import ReactDOM from 'react-dom/client';
 // import ExmReapeatCom11 from './ExmReapeatCom11.js'
 // import Landing from '../src/pages/landing'
 // import LatestProducts11 from './LatestProducts11.js'
-import OrderCompleted from './OrderCompleted';
+// import OrderCompleted from './OrderCompleted';
+import Rating from './Rating.js'
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <OrderCompleted/>
+    <Rating/>
   </React.StrictMode>
 );
 
