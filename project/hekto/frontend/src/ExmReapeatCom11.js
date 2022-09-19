@@ -1,5 +1,5 @@
 import "./ExmReapeatCom11.css";
-import LatestProducts_chair1 from './Images/LatestProduct_chair1.png'
+import LatestProducts_chair1 from './Images/LatestProducts_chair1.png'
 import LatestProducts_chair2 from './Images/LatestProducts_chair2.png'
 import LatestProducts_chair3 from './Images/LatestProducts_chair3.png'
 import LatestProducts_chair4 from './Images/LatestProducts_chair4.png'
@@ -51,7 +51,7 @@ function ExmReapeatCom11() {
     return (
         <>
             <div className="LatestProducts_outer"> 
-                <ReapeatComponent image={LatestProduct_chair1} />
+                <ReapeatComponent image={LatestProducts_chair1} />
                 <ReapeatComponent image={LatestProducts_chair2} />
                 <ReapeatComponent image={LatestProducts_chair3} />
                 {/* <ReapeatComponent image={LatestProduct_chair1} />

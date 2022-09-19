@@ -1,5 +1,5 @@
 import "./LatestProducts.css";
-import LatestProduct_chair1 from './Images/LatestProduct_chair1.png'
+import LatestProducts_chair1 from './Images/LatestProducts_chair1.png'
 import LatestProducts_chair2 from './Images/LatestProducts_chair2.png'
 import LatestProducts_chair3 from './Images/LatestProducts_chair3.png'
 import LatestProducts_chair4 from './Images/LatestProducts_chair4.png'
@@ -42,7 +42,7 @@ function LatestProducts() {
                                 </div>
                             </div>
                             <div className="LatestProducts_imgchair_col2" >
-                                <img src={LatestProduct_chair1}></img>
+                                <img src={LatestProducts_chair1}></img>
                             </div>
                         </div>
                         <div className="LatestProducts_bottom_imgchair_text_row2">
