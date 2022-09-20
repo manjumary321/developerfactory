@@ -31,6 +31,8 @@
 .Rating_inncont_row1{
     width: 100%;
     background-color: #f4f4fc;
+    border: none;
+    border-radius: 7px;
     display: flex;
     justify-content: left;
     flex-direction:column;
@@ -86,6 +88,8 @@
 .Rating_inncont_row2{
     width: 100%;
     background-color: #f4f4fc;
+    border: none;
+    border-radius: 7px;
     display: flex;
     justify-content: left;
     flex-direction:column;

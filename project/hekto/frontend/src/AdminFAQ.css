@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.AdminFAQ_outer{
+    width: 50%;
+    background-color: #FAFBFC;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.AdminFAQ_inner{
+    width: 70%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+
+}
+.AdminFAQ_Row1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.AdminFAQ_Row1_col1{
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 10px;
+
+}
+.AdminFAQ_Row1_col1_label1{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    color:#6B7A99;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30.12px;
+
+}
+
+
+.AdminFAQ_Row1_col1_label2{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color:#B7C0D2;
+    text-align: left;
+    font-size: "segoe ui";
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 30.12px;
+   
+
+}
+.AdminFAQ_Row1_col2{
+    width: 30%;
+    display: flex;
+    justify-content:right;
+    margin-top: 10px;
+    
+}
+.AdminFAQ_Row2{
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-bottom: 10px;
+
+}
+.AdminFAQ_Row2 label{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color:#6B7A99;
+    text-align: left;
+    /* font-size: "segoe ui";
+    font-weight: 400px;
+    font-size: 19px;
+    line-height: 30.12px; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 30.12px;
+   
+    
+}
+.AdminFAQ_Row3{
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content:left;
+    flex-direction:column;
+    /* margin: 30px; */
+     
+
+}
+.AdminFAQ_Row3_row1{
+    width: 95%;
+    display: flex;
+    justify-content:left;
+    margin: 20px;
+    
+}
+.AdminFAQ_Row3_row1 label{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color:#6B7A99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25.12px;
+    text-align: left;
+    margin-right: 11px;
+    
+}
+.AdminFAQ_Row3_row2{
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    margin: 20px;
+
+}
+.AdminFAQ_Row3_row2 button{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    color:#6B7A99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    line-height: 30.12px;
+    text-align:center;
+    background-color:white ;
+    /* background-color: antiquewhite; */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 0px #6B7A99;
+    padding: 2px;
+    
+}

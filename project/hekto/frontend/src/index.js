@@ -13,12 +13,13 @@ import ReactDOM from 'react-dom/client';
 // import Landing from '../src/pages/landing'
 // import LatestProducts11 from './LatestProducts11.js'
 // import OrderCompleted from './OrderCompleted';
-import Rating from './Rating.js'
+// import Rating from './Rating.js';
+import AdminFAQ from './AdminFAQ.js';
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Rating/>
+    <AdminFAQ/>
   </React.StrictMode>
 );
 

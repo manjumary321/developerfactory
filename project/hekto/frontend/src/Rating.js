@@ -4,6 +4,7 @@ import Rating_Star4 from './Images/Rating_Star4.png';
 
 function Rating(){
     return(
+        <>
         <div className="Rating_outer">
             <div className="Rating_outer_container">
                 <div className="Rating_inner_container">
@@ -37,6 +38,7 @@ function Rating(){
             </div>
             
         </div>
+    </>    
     )
 }
 export default Rating;
