@@ -1,0 +1,57 @@
+
+
+.AdminSingleSummary_outer{
+    width: 35%;
+    background-color:bisque ;
+    display: flex;
+    justify-content: space-evenly;
+}
+.AdminSingleSummary_container{
+    width: 55%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 25px;
+
+}
+.AdminSingleSummary_inner_cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: 35px;
+   
+}
+.AdminSingleSummary_inner_cont_row{
+    width: 100%;
+    
+    align-items: center;
+    text-align:center;
+    color:#ADB8CC;
+    /* font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height:32px; */
+    font-size: "segoe ui";
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 28.12px;
+}
+.AdminSingleSummary_inner_cont_row2{
+    width: 100%;
+    
+    align-items: center;
+    text-align:center;
+    color:#4E5E80;
+    /* font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height:32px; */
+    font-size: "segoe ui";
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 28.12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
