@@ -16,12 +16,13 @@ import ReactDOM from 'react-dom/client';
 // import Rating from './Rating.js';
 // import AdminFAQ from './AdminFAQ.js';
 // import AdminFilterSelection from './AdminFilterSelection.js';
-import AdminSingleSummary from './AdminSingleSummary.js';
+// 
+import AdminUserProfile from'./AdminUserProfile.js';
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AdminSingleSummary/>
+    <AdminUserProfile/>
   </React.StrictMode>
 );
 
