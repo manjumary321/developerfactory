@@ -14,12 +14,13 @@ import ReactDOM from 'react-dom/client';
 // import LatestProducts11 from './LatestProducts11.js'
 // import OrderCompleted from './OrderCompleted';
 // import Rating from './Rating.js';
-import AdminFAQ from './AdminFAQ.js';
+// import AdminFAQ from './AdminFAQ.js';
+import AdminFilterSelection from './AdminFilterSelection.js';
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AdminFAQ/>
+    <AdminFilterSelection/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+.AdminFilterSelection_outer{
+    width: 50%;
+    /* background-color: rgb(43, 224, 224); */
+    display: flex;
+    justify-content: center;
+
+}    
+.AdminFilterSelection_inner{
+    width: 50%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    margin: 5px;
+}
+.AdminFilterSelection_inner_row1{
+    width: 100%;
+    background-color: #FAFBFC;
+    border: 2px solid #EDEFF2;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    /* margin: 10px; */
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.AdminFilterSelection_inner_row1_left{
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+   
+}
+.AdminFilterSelection_inner_row1_left label{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    color: #6B7A99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    line-height:32px;
+   
+
+}
+
+.AdminFilterSelection_inner_row1_right{
+    width: 30%;
+    display: flex;
+    justify-content:right;
+    margin-right: 20px;
+    
+}
+.AdminFilterSelection_inner_row1_right button{
+    width: 30%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: none;
+    background-color: #FAFBFC;
+    
+}
+/* -------------------table----------------- */
+.AdminFilterSelection_inner_row2{
+    width: 100%;
+    background-color: #FAFBFC;
+    border: 2px solid #EDEFF2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none;
+ 
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.AdminFilterSelection_inner_row2_container{
+    width: 75%;
+    direction: flex;
+    justify-content:left;
+    align-items: center;
+    margin: 20px;
+
+}
+.AdminFilterSelection_table{
+    width: 100%;
+    /* display:flex;
+    justify-content: space-evenly;
+    flex-direction:column; */
+
+}
+.AdminFilterSelection_tr{
+    width: 100%;
+    padding: 10px;
+}
+/* -------------th---------- */
+.AdminFilterSelection_th_col1{
+    width: 10%;
+    align-items:center;
+    text-align: left;
+    
+}
+.AdminFilterSelection_th_col2{
+    width: 75%;
+    align-items: center;
+    text-align: left;
+    color: #6B7A99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height:32px;
+   
+    
+}
+.AdminFilterSelection_th_col3{
+    width: 15%;
+    align-items: center;
+    text-align: right;
+    color: #6B7A99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height:32px;
+    margin-right: 15px;
+}
+
+/* ----------td--------- */
+.AdminFilterSelection_td_col1{
+    width: 10%;
+    align-items:center;
+    text-align: left;
+    
+}
+.AdminFilterSelection_td_col2{
+    width: 75%;
+    align-items: center;
+    text-align: left;
+    color: #6B7A99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height:32px;
+   
+    
+}
+.AdminFilterSelection_td_col3{
+    width: 15%;
+    align-items: center;
+    text-align: right;
+    color: #6B7A99;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height:32px;
+    margin-right: 15px;
+}
+
+/* -------------scrollbar-------- */
+.AdminFilterSelection_table {
+
+    /* overflow-y: scroll; */
+    display: block;
+    height: 150px;
+    overflow-y: auto;
+    
+    /* scrollbar-color: #EDEFF2 #FAFBFC; */
+    /* scrollbar-color: #cb411b #0d3257;
+    scrollbar-width:thin;
+     */
+
+
+    /* scrollbar-color:#6B7A99 ;
+    scrollbar-width: 2px; */
+}
+.AdminFilterSelection_table::-webkit-scrollbar{
+    width: 10px;
+    /* background-color: #cb411b; */
+    
+    
+}
+.AdminFilterSelection_table::-webkit-scrollbar-track{
+    border-radius: 5px;
+    /* background-color: rgb(189, 186, 222); */
+  
+    background-color: #FAFBFC;
+    
+    
+}
+.AdminFilterSelection_table::-webkit-scrollbar-thumb{
+   
+    background-color: #EDEFF2;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
