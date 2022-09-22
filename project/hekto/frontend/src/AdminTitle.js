@@ -19,9 +19,14 @@ function AdminTitle() {
                     <label className="AdminTitle_Titmenu_col2_co1">Draft</label>
                     <label className="AdminTitle_Titmenu_col2_co1">Assembly</label>
                 </div>
-                <div className="AdminTitle_Titlemenu_col3">
+                {/* <div className="AdminTitle_Titlemenu_col3">
                     <button> <MdAddCircle style={{ color: '#C499FF', fontsize: 60, width: 25, height: 25,marginRight:10 }} />
                     Add Product</button>
+                </div> */}
+                <div className="AdminTitle_Titlemenu_col3">
+                    <div className="AdminTitle_Titmenu_col3_iconbutton"> <MdAddCircle style={{ color: '#C499FF', fontsize: 60, width: 25, height: 25,marginRight:10 }} />
+                    <button>Add Product</button>
+                    </div>
                 </div>
             </div>
         </>

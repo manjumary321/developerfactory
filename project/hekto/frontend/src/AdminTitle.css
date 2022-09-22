@@ -85,7 +85,7 @@
     color:#8833FF;
     border-bottom: 2px solid #8833FF;
 }
-.AdminTitle_Titlemenu_col3{
+/* .AdminTitle_Titlemenu_col3{
     width: 50%;
     display: flex;
     justify-content:center;
@@ -103,6 +103,40 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21.6px;
+    
+    
+    
+} */
+/* ---------------- */
+.AdminTitle_Titlemenu_col3{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 15px;
+}
+.AdminTitle_Titmenu_col3_iconbutton{
+    width: 30%;
+    background-color:#8833FF ;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.AdminTitle_Titlemenu_col3 button{
+   
+    background-color:#8833FF ;
+    border:  none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+
     
     
     
