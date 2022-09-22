@@ -1,8 +1,9 @@
 import './OrderCompleted.css';
 import OrderCompleted_clock1 from './Images/OrderCompleted_clock1.png';
 import OrderCompleted_checklist1 from './Images/OrderCompleted_checklist1.png';
-import OrderCompleted_Vector16 from './Images/OrderCompleted_Vector16.png';
-import OrderCompleted_Vector15 from './Images/OrderCompleted_Vector15.png';
+import OrderCompleted_Vector17 from './Images/OrderCompleted_Vector17.png'
+// import OrderCompleted_Vector16 from './Images/OrderCompleted_Vector16.png';
+// import OrderCompleted_Vector15 from './Images/OrderCompleted_Vector15.png';
 
 function OrderCompleted() {
     return (
@@ -29,12 +30,14 @@ function OrderCompleted() {
                         <div className="OrderCompleted_innercont_col2_row">
 
                             <div className="OrderCompleted_cont_col2_row1">
-                                <div className="OrderCompleted_cont_col2_row1_img1">
+                                     <img src={OrderCompleted_Vector17}></img>
+                                
+                                {/* <div className="OrderCompleted_cont_col2_row1_img1">
                                     <img src={OrderCompleted_Vector16}></img>
                                 </div>
                                 <div className="OrderCompleted_cont_col2_row1_img2">
                                    <img src={OrderCompleted_Vector15}></img>
-                                </div>    
+                                </div>     */}
                             </div>
                             <div className="OrderCompleted_cont_col2_row2">
                                 <label>Your Order Is Completed! </label>

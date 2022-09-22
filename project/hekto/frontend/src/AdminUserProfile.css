@@ -4,13 +4,13 @@
 
 .AdminUserProfile_outer{
     width: 35%;
-    background-color:bisque ;
+    /* background-color:bisque ; */
     display: flex;
     justify-content: space-evenly;
 }
 .AdminUserProfile_container{
     width: 40%;
-    background-color:#F7F8FA;
+    background-color:#FAFBFC;
     display: flex;
     justify-content: center;
     align-items: center;
