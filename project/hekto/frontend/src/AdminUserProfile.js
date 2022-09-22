@@ -5,7 +5,7 @@ import AdminUserProfile_Women1 from './Images/AdminUserProfile_Women1.png';
 function AdminUserProfile(){
     return(
         <>
-        <div className="AdminUserProfile_outer">
+        {/* <div className="AdminUserProfile_outer"> */}
             <div className="AdminUserProfile_container">
                 <div className="AdminUserProfile_inner_container">
                     <div className="AdminUserProfile_inn_cont_row1">
@@ -19,7 +19,7 @@ function AdminUserProfile(){
                     </div>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
         </>
     )
 }

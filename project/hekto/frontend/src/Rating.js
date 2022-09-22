@@ -5,7 +5,7 @@ import Rating_Star4 from './Images/Rating_Star4.png';
 function Rating(){
     return(
         <>
-        <div className="Rating_outer">
+        {/* <div className="Rating_outer"> */}
             <div className="Rating_outer_container">
                 <div className="Rating_inner_container">
                     <div className="Rating_inncont_row1">
@@ -37,7 +37,7 @@ function Rating(){
                 </div>
             </div>
             
-        </div>
+        {/* </div> */}
     </>    
     )
 }

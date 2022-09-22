@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
-.Rating_outer{
+/* .Rating_outer{
     width: 40%;
-    /* background-color: #F5F5F5; */
-    /* background-color: #f4f4fc; */
+    background-color: #F5F5F5;
+    background-color: #f4f4fc;
     display: flex;
     justify-content: space-evenly;
 
-}
+} */
 .Rating_outer_container{
-    width: 60%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;

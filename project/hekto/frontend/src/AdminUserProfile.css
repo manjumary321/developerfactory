@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
-.AdminUserProfile_outer{
+/* .AdminUserProfile_outer{
     width: 35%;
-    /* background-color:bisque ; */
+    background-color:bisque ;
     display: flex;
     justify-content: space-evenly;
-}
+} */
 .AdminUserProfile_container{
-    width: 40%;
+    width: 20%;
     background-color:#FAFBFC;
     display: flex;
     justify-content: center;

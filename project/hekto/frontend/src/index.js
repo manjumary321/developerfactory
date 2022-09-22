@@ -12,17 +12,19 @@ import ReactDOM from 'react-dom/client';
 // import ExmReapeatCom11 from './ExmReapeatCom11.js'
 // import Landing from '../src/pages/landing'
 // import LatestProducts11 from './LatestProducts11.js'
-import OrderCompleted from './OrderCompleted';
+// import OrderCompleted from './OrderCompleted';
 // import Rating from './Rating.js';
 // import AdminFAQ from './AdminFAQ.js';
 // import AdminFilterSelection from './AdminFilterSelection.js';
 // import AdminSingleSummary from './AdminSingleSummary.js';
 // import AdminUserProfile from'./AdminUserProfile.js';
+import AdminTitle from './AdminTitle';
+
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <OrderCompleted/>
+    <AdminTitle/>
   </React.StrictMode>
 );
 

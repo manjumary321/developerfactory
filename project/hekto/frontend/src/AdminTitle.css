@@ -1,0 +1,109 @@
+.AdminTitle_Titlemenu{
+    width: 100%;
+  
+    /* background-color: aqua; */
+    background-color: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top: 20px;
+   
+}
+.AdminTitle_Titlemenu_col1{
+    width: 40%;
+   
+    display: flex;
+    justify-content:center;
+    margin-bottom: 15px;
+}
+.AdminTitle_Titmenu_col1_col1{
+    width: 20%;
+   
+    display: flex;
+    justify-content:left;
+   
+
+}
+.AdminTitle_Titmenu_col1_col1 label{
+    width: 10%;
+    width: 40px;
+    height: 40px;
+    /* background-color: rgb(213, 42, 71); */
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.AdminTitle_Titmenu_col1_col2{
+    width:30% ;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 15px;
+    
+}
+.AdminTitle_Titmenu_col1_col2 label{
+    width: 100%;
+    color:#6B7A99;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+}
+
+.AdminTitle_Titlemenu_col2{
+    width:60% ;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.AdminTitle_Titmenu_col2_co1{
+    color: #7D8FB3;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    display: flex;
+    justify-content:space-around ;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.AdminTitle_Titmenu_col2_co1:hover {
+    color:#8833FF;
+    border-bottom: 2px solid #8833FF;
+}
+.AdminTitle_Titlemenu_col3{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 15px;
+}
+.AdminTitle_Titlemenu_col3 button{
+    width: 35%;
+    background-color:#8833FF ;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    
+    
+    
+}
