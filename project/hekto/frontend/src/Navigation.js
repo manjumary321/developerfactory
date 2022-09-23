@@ -16,6 +16,7 @@ import AdminSingleSummary from './AdminSingleSummary.js';
 import AdminUserProfile from'./AdminUserProfile.js';
 import AdminTitle from './AdminTitle';
 import AdminVideo from './AdminVideo.js';
+import AdminImages from './AdminImages.js';
 
 
 
@@ -42,6 +43,7 @@ function Navigation() {
                 <Route path = "/AdminUserProfile" element = {<AdminUserProfile/>}></Route>
                 <Route path = "/AdminTitle" element = {<AdminTitle/>}></Route>
                 <Route path = "/AdminVideo" element = {<AdminVideo/>}></Route>
+                <Route path = "/AdminImages" element = {<AdminImages/>}></Route>
 
                 
                 <Route path = "/Examplecheck" element = {<Examplecheck/>}></Route>
