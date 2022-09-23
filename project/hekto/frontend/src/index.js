@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// import Navigation from './Navigation.js';
-
-
 // import InBetweenBanner1 from './InBetweenBanner1';
 // import LatestProducts from './LatestProducts.js'
 // import FilterBarVertical from './FilterBarVertical.js';
@@ -18,13 +15,15 @@ import ReactDOM from 'react-dom/client';
 // import AdminFilterSelection from './AdminFilterSelection.js';
 // import AdminSingleSummary from './AdminSingleSummary.js';
 // import AdminUserProfile from'./AdminUserProfile.js';
-import AdminTitle from './AdminTitle';
+// import AdminTitle from './AdminTitle';
+
+import Navigation from './Navigation.js';
 
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AdminTitle/>
+    <Navigation/>
   </React.StrictMode>
 );
 

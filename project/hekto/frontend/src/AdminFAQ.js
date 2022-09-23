@@ -13,7 +13,7 @@ function AdminFAQ() {
                         </div>
                         <div className="AdminFAQ_Row1_col2">
                             {/* <img></img> */}
-                            <BiDotsHorizontalRounded style={{ color: '#C3CAD9', fontsize: 50 }} />
+                            <BiDotsHorizontalRounded style={{ color: '#C3CAD9', fontsize: 50,width:20,height:20 }} />
                         </div>
 
                     </div>

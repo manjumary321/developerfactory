@@ -24,8 +24,9 @@ function AdminTitle() {
                     Add Product</button>
                 </div> */}
                 <div className="AdminTitle_Titlemenu_col3">
-                    <div className="AdminTitle_Titmenu_col3_iconbutton"> <MdAddCircle style={{ color: '#C499FF', fontsize: 60, width: 25, height: 25,marginRight:10 }} />
-                    <button>Add Product</button>
+                    <div className="AdminTitle_Titmenu_col3_iconbutton">
+                         <MdAddCircle style={{ color: '#C499FF', fontsize: 60, width: 25, height: 25,marginRight:10 }} />
+                        <button>Add Product</button>
                     </div>
                 </div>
             </div>
