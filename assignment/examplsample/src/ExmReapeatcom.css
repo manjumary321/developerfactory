@@ -2,17 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.LatestProducts11_outer{
+.LatestProducts_outer {
     width: 100%;
-    background-color:white;
-    /* background-color: #ebbaba; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    position: absolute;
     align-items: center;
 }
 
-.LatestProducts11_header {
+.LatestProducts_header {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,23 +19,23 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 42px;
     line-height: 49.22px;
+    /* position:absolute; */
     margin-top: 10px;
     padding: 10px;
 
 }
 
-.LatestProducts11_menu {
-    width: 80%;
+.LatestProducts_menu {
+    width: 50%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-top: 10px;
-    margin-left: 30px;
-    
+    /* position: absolute; */
 
 
 }
 
-.LatestProducts11_menu_col {
+.LatestProducts_menu_col {
     /* width: 20%; */
     color: #151875;
     font-family: 'Lato', sans-serif;
@@ -48,63 +47,55 @@
     /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-.LatestProducts11_menu_col:hover {
+.LatestProducts_menu_col:hover {
     color: #FB4997;
     border-bottom: 2px solid #FB4997;
 }
 
-.LatestProducts11_outerimage_container {
-    width: 80%;
-    /* display: flex; */
-    display:table;
-    justify-content:space-around;
-    flex-direction:row;
-    padding-top: 20px;
-    /* margin-top: 50px; */
-   margin: 10px;
+.LatestProducts_outerimage_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 70px;
 
 }
 
-.LatestProducts11_inner_outerimage1_container1_row1{
-    width: 30%;
-   
-    /* display: flex; */
-    display: inline-table;
-    /* display: table; */
+.LatestProducts_inner_outerimage1_container1_row1{
+    width: 100%;
+    display: flex;
     justify-content: space-evenly;
-    flex-direction:row;
+    flex-direction: row;
     margin-bottom: 60px;
 }
 
-/* .LatestProducts_inner_outerimage2_container2_row2{
+.LatestProducts_inner_outerimage2_container2_row2{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     margin-top: 30px;
     margin-top: 10px;
-} */
+}
 
 
-.LatestProducts11_inner_inner_imagefull {
-     width:85%;
+.LatestProducts_inner_inner_imagefull {
+    width: 30%;
     display: flex;
-    /* display: inline-table; */
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     padding-bottom: 10px;
-    margin: 15px;
 
 }
 
-.LatestProducts11_inner_top_image_row1 {
+.LatestProducts_inner_top_image_row1 {
     background-color: #F7F7F7;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
 }
-/* .LatestProducts11_inninnerimage_row :hover{
+/* .LatestProducts_inninnerimage_row :hover{
     background-color: white;
     width: 100%;
     height: 100%;
@@ -114,8 +105,8 @@
 } */
 
 
-.LatestProducts11_imagecol2 {
-    width: 85%;
+.LatestProducts_imagecol2 {
+    width: 75%;
     /* background-color: #F7F7F7; */
     display: flex;
 
@@ -125,7 +116,7 @@
 
 }
 
-.LatestProducts11_icons_row1_col1 {
+.LatestProducts_icons_row1_col1 {
     visibility:hidden;
     /* visibility:hidden; */
     /* opacity:0; */
@@ -141,13 +132,13 @@
     padding-bottom: 10px;
 }
 
-.LatestProducts11_inner_top_image_row1:hover .LatestProducts11_icons_row1_col1{
+.LatestProducts_inner_top_image_row1:hover .LatestProducts_icons_row1_col1{
  
     visibility: visible;
     /* transition: all 1s ease  */
 } 
 
-.LatestProducts11_imagecol2 img {
+.LatestProducts_imagecol2 img {
     width: 90%;
     height: 90%;
     display: flex;
@@ -159,7 +150,7 @@
     margin-bottom: 10px;
     padding-top: 5px;
 }
-.LatestProducts11_icon_imgsale_col1_row1{
+.LatestProducts_icon_imgsale_col1_row1{
     /* width: 10%;
     display: flex;
     justify-content: center; */
@@ -175,7 +166,7 @@
     
 
 } */
-.LatestProducts11_icons_col1_row2{
+.LatestProducts_icons_col1_row2{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -191,7 +182,7 @@
     margin-bottom: 10px;
 
 } */
-.LatestProducts11_imageicons1 {
+.LatestProducts_imageicons1 {
 
     background-color: #EEEFFB;
     width: 35px;
@@ -208,7 +199,7 @@
  
 
 }
-.LatestProducts11_imageicons1 img{
+.LatestProducts_imageicons1 img{
     width:30px;
    
     display: flex;
@@ -224,7 +215,7 @@
 
 
 }
-.LatestProducts11_imageicons2 img{
+.LatestProducts_imageicons2 img{
     width:20px;
     display: flex;
     justify-content: center;
@@ -234,7 +225,7 @@
 
 }
 
-.LatestProducts11_bottom_imgchair_text_row2 {
+.LatestProducts_bottom_imgchair_text_row2 {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -243,15 +234,8 @@
     margin-top: 10px;
 }
 
-.LatestProducts11_bottom_imgchair_lefttext_row2{
-    width: 65%;
-    display: flex;
-    justify-content: left;
- 
-
-}
-.LatestProducts11_bottom_imgchair_lefttext_row2 label{
-    width: 100%;
+.LatestProducts_bottom_imgchair_lefttext_row2{
+    width: 40%;
     display: flex;
     justify-content: left;
     color: #151875;
@@ -262,19 +246,19 @@
     transform: matrix(1, 0.01, -0.01, 1, 0, 0);
 
 }
-.LatestProducts11_bottom_imgchair_righttext_row2{
-    width: 40%;
+.LatestProducts_bottom_imgchair_righttext_row2{
+    width: 50%;
     display: flex;
     justify-content: right;  
 }
-.LatestProducts11_bottom_imgchair_righttext_row2 label{
+.LatestProducts_bottom_imgchair_righttext_row2 label{
     padding-left: 10px;
     color: #151875;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
     line-height: 16.41px;
 }
-.LatestProducts11_bottom_imgchair_righttext_row2 span{
+.LatestProducts_bottom_imgchair_righttext_row2 span{
     /* padding-left: 10px; */
     color: red;
     font-family: 'Josefin Sans', sans-serif;
@@ -284,4 +268,23 @@
     padding-left: 10px;
     
     
+}
+
+/* ----------------- */
+
+.outer{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(4, 105, 71);
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+} 
+ .wwww{
+    width: 40%;
+    height: 50vh;
+    background-color: rgb(238, 144, 20);
+    display:flex;
+    justify-content: space-evenly;
+
 }

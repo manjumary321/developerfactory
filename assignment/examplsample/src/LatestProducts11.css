@@ -4,8 +4,8 @@
 
 .LatestProducts11_outer{
     width: 100%;
-    background-color:white;
-    /* background-color: #ebbaba; */
+    /* background-color:white; */
+    background-color: #ebbaba;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -54,20 +54,18 @@
 }
 
 .LatestProducts11_outerimage_container {
-    width: 80%;
+    /* width: 100%; */
     /* display: flex; */
     display:table;
-    justify-content:space-around;
+    justify-content: space-evenly;
     flex-direction:row;
-    padding-top: 20px;
-    /* margin-top: 50px; */
-   margin: 10px;
+    margin-top: 70px;
+    margin-left: 20px;
 
 }
 
 .LatestProducts11_inner_outerimage1_container1_row1{
-    width: 30%;
-   
+    /* width: 100%; */
     /* display: flex; */
     display: inline-table;
     /* display: table; */
@@ -87,13 +85,12 @@
 
 
 .LatestProducts11_inner_inner_imagefull {
-     width:85%;
-    display: flex;
-    /* display: inline-table; */
-    justify-content: center;
+    width: 30%;
+    /* display: flex; */
+    display: inline-table;
+    justify-content: space-evenly;
     flex-direction: column;
     padding-bottom: 10px;
-    margin: 15px;
 
 }
 
@@ -115,7 +112,7 @@
 
 
 .LatestProducts11_imagecol2 {
-    width: 85%;
+    width: 75%;
     /* background-color: #F7F7F7; */
     display: flex;
 
@@ -141,7 +138,7 @@
     padding-bottom: 10px;
 }
 
-.LatestProducts11_inner_top_image_row1:hover .LatestProducts11_icons_row1_col1{
+.LatestProducts11_inner_top_image_row1:hover .LatestProducts_icons_row1_col1{
  
     visibility: visible;
     /* transition: all 1s ease  */
@@ -244,14 +241,7 @@
 }
 
 .LatestProducts11_bottom_imgchair_lefttext_row2{
-    width: 65%;
-    display: flex;
-    justify-content: left;
- 
-
-}
-.LatestProducts11_bottom_imgchair_lefttext_row2 label{
-    width: 100%;
+    width: 40%;
     display: flex;
     justify-content: left;
     color: #151875;
@@ -263,7 +253,7 @@
 
 }
 .LatestProducts11_bottom_imgchair_righttext_row2{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: right;  
 }

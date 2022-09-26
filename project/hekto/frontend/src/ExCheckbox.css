@@ -1,0 +1,44 @@
+.outer1{
+    width: 100%;
+    background-color: rgb(118, 151, 140);
+    display: flex;
+    justify-content: center;
+}
+.check_wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+    /* position: absolute */
+
+}
+.input[type="checkbox" i]
+{
+    display:none;
+}
+
+.checkmark{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(123, 103, 141);
+    border-radius: 10px;
+    
+
+
+}
+.checkmark::after{
+    content: "";
+    /* position: absolute; */
+    width: 25px;
+    height: 45px;
+    border-right:5px solid #fff ;
+    border-bottom: 5px solid #ffff;
+    top :60%;
+    left:70%;
+    transform:translate(50%,50% ,rotate(40deg)) ;
+
+
+}

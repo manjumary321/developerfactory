@@ -12,30 +12,30 @@ import LatestProducts_icons4 from './Images/LatestProducts_icons4.png'
 
 function ReapeatComponent({ image }) {
     return <>
-        <div className="ExmReapeatCom11_container">
-        <div className="ExmReapeatCom11_inner_inner_imagefull">  
+        <div className="LatestProducts_container">
+        <div className="LatestProducts_inner_inner_imagefull">  
 
-            <div className="ExmReapeatCom11_inner_top_image_row1">
-                <div className="ExmReapeatCom11_icons_row1_col1">
-                    <div className="ExmReapeatCom11_icon_imgsale_col1_row1">
+            <div className="LatestProducts_inner_top_image_row1">
+                <div className="LatestProducts_icons_row1_col1">
+                    <div className="LatestProducts_icon_imgsale_col1_row1">
                         <img src={LatestProducts_icons1}></img>
 
                     </div>
-                    <div className="ExmReapeatCom11_icons_col1_row2">
-                        <div className="ExmReapeatCom11_imageicons1"><img src={LatestProducts_icons2}></img></div>
-                        <div className="ExmReapeatCom11_imageicons2"><img src={LatestProducts_icons3}></img></div>
-                        <div className="ExmReapeatCom11_imageicons2"><img src={LatestProducts_icons4}></img></div>
+                    <div className="LatestProducts_icons_col1_row2">
+                        <div className="LatestProducts_imageicons1"><img src={LatestProducts_icons2}></img></div>
+                        <div className="LatestProducts_imageicons2"><img src={LatestProducts_icons3}></img></div>
+                        <div className="LatestProducts_imageicons2"><img src={LatestProducts_icons4}></img></div>
                     </div>
                 </div>
-                <div className="ExmReapeatCom11_imgchair_col2" >
+                <div className="LatestProducts_imgchair_col2" >
                     <img src={image}></img>
                 </div>
             </div>
-            <div className="ExmReapeatCom11_bottom_imgchair_text_row2">
-                <div className="ExmReapeatCom11_bottom_imgchair_lefttext_row2">
+            <div className="LatestProducts_bottom_imgchair_text_row2">
+                <div className="LatestProducts_bottom_imgchair_lefttext_row2">
                     <label>Comfort Handy Craft</label>
                 </div>
-                <div className="ExmReapeatCom11_bottom_imgchair_righttext_row2">
+                <div className="LatestProducts_bottom_imgchair_righttext_row2">
                     <label>$42.00</label>
                     <span>$65.00</span>
                 </div>
@@ -50,7 +50,7 @@ function ReapeatComponent({ image }) {
 function ExmReapeatCom11() {
     return (
         <>
-            <div className="ExmReapeatCom11_outer"> 
+            <div className="LatestProducts_outer"> 
                 <ReapeatComponent image={LatestProducts_chair1} />
                 <ReapeatComponent image={LatestProducts_chair2} />
                 <ReapeatComponent image={LatestProducts_chair3} />
