@@ -72,7 +72,7 @@
 /* -------------------table----------------- */
 .AdminFilterSelection_inner_row2{
     width: 100%;
-    background-color: #FAFBFC;
+    /* background-color: #FAFBFC; */
     border: 2px solid #EDEFF2;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -107,6 +107,7 @@
 /* -------------th---------- */
 .AdminFilterSelection_th_col1{
     width: 10%;
+   
     align-items:center;
     text-align: left;
     
@@ -131,6 +132,7 @@
     font-size: 16px;
     line-height:32px;
     margin-right: 15px;
+    margin-right: 5px;
 }
 
 /* ----------td--------- */
@@ -167,7 +169,7 @@
 
     /* overflow-y: scroll; */
     display: block;
-    height: 150px;
+    height: 160px;
     overflow-y: auto;
     
     /* scrollbar-color: #EDEFF2 #FAFBFC; */
@@ -202,5 +204,71 @@
 
 
 
+/* ------------------------ */
+.AdminFilterSelection_checkbox{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  /* Hide the default checkbox */
+  .AdminFilterSelection_checkbox input {
+    visibility: hidden;
+    cursor: pointer;
+  }
 
+    /* Create a custom checkbox */
+.AdminFilterSelection_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    /* background-color: lightgray; */
+    background-color: white;
+    border-radius:50%;
+    box-shadow:0px 0px 6px 0px rgb(176, 176, 176);
 
+  }
+
+  .AdminFilterSelection_checkbox:hover input ~ .AdminFilterSelection_checkmark{
+    background-color:#8833FF;
+  }
+
+  /* .AdminFilterSelection_checkbox input:checked ~ .AdminFilterSelection_checkmark {
+    background-color:#8833FF;
+  } */
+
+   /* Create the mark/indicator (hidden when not checked) */
+.AdminFilterSelection_checkmark :after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the mark when checked */
+.AdminFilterSelection_checkbox input:checked ~ .AdminFilterSelection_checkmark:after {
+    display: block;
+  }
+
+  /* Style the mark/indicator */
+.AdminFilterSelection_checkbox .AdminFilterSelection_checkmark:after {
+    content: "";
+    left: 11px;
+    top: 6px;
+    width: 8px;
+    height: 10px;
+    margin-left: 8px;
+    margin-top: 6px;
+    
+    /* border: solid white; */
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }

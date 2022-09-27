@@ -1,0 +1,144 @@
+.outer1{
+    width: 100%;
+    background-color: rgb(118, 151, 140);
+    display: flex;
+    justify-content: center;
+}
+.check_wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+    /* position: absolute */
+
+}
+.input[type="checkbox" i]
+{
+    display:none;
+}
+
+.checkmark{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(123, 103, 141);
+    border-radius: 10px;
+    
+
+
+}
+.checkmark::after{
+    content: "";
+    /* position: absolute; */
+    width: 25px;
+    height: 45px;
+    border-right:5px solid #fff ;
+    border-bottom: 5px solid #ffff;
+    top :60%;
+    left:70%;
+    transform:translate(50%,50% ,rotate(40deg)) ;
+
+
+}
+/* --------------------GeeksforGeeks------------- */
+.GeeksforGeeks{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+}
+
+.GeeksforGeeks h1{
+    color: green;
+}
+
+.main {
+    display: block;
+    /* position: relative; */
+    padding-left: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+  /* Hide the default checkbox */
+  input[type=checkbox] {
+    /* visibility: hidden; */
+}
+  
+
+ /* Creating a custom checkbox
+        based on demand */
+        .geekmark {
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: black;
+        }
+
+         /* Specify the background color to be
+        shown when hovering over checkbox */
+        .main:hover input ~ .geekmark {
+            background-color: yellow;
+        }
+          
+         /* Specify the background color to be
+        shown when checkbox is active */
+        .main input:active ~ .geekmark {
+            background-color: red;
+        }
+
+         /* Specify the background color to be
+        shown when checkbox is checked */
+        .main input:checked ~ .geekmark {
+            background-color: green;
+        }
+
+        /* Checkmark to be shown in checkbox */
+        /* It is not be shown when not checked */
+        .geekmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        
+        /* Display checkmark when checked */
+        .main input:checked ~ .geekmark:after {
+            display: block;
+        }
+
+            
+        /* Styling the checkmark using webkit */
+        /* Rotated the rectangle by 45 degree and 
+        showing only two border to make it look
+        like a tickmark */
+        .main .geekmark:after {
+            left: 8px;
+            bottom: 5px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 4px 4px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        /* ----------------------------------------------------- */
+
+        .check222{
+            width: 70%;
+            display: flex;
+            justify-content: left;
+            margin: 70px;
+        }
+        .AdminFilterSelection_th_col1 input{
+            width: 100%;
+            width: 80%;
+            height: 80%;
+            padding: 50%;
+        }

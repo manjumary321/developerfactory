@@ -1,6 +1,7 @@
 import './AdminFilterSelection.css';
 import { AiOutlineDown } from "react-icons/ai";
 
+
 function AdminFilterSelection() {
     return (
         <>
@@ -22,8 +23,13 @@ function AdminFilterSelection() {
                                 <thead>
                                     <tr className="AdminFilterSelection_tr">
                                         <th className="AdminFilterSelection_th_col1">
-                                            <label></label>
-                                            <input type="checkbox" name="check" />
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
                                         </th>
                                         <th className="AdminFilterSelection_th_col2">
                                             <label>All Product</label>
@@ -35,9 +41,15 @@ function AdminFilterSelection() {
                                 </thead>
                                 <tbody>
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
-                                            <input type="checkbox" name="check" />
-                                        </td>
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>Apple</label>
                                         </td>
@@ -46,9 +58,15 @@ function AdminFilterSelection() {
                                         </td>
                                     </tr>
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
-                                            <input type="checkbox" name="check" />
-                                        </td>
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>Samsung</label>
                                         </td>
@@ -57,9 +75,18 @@ function AdminFilterSelection() {
                                         </td>
                                     </tr>
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
+                                        {/* <td className="AdminFilterSelection_td_col1">
                                             <input type="checkbox" name="check" />
-                                        </td>
+                                        </td> */}
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>Vivo</label>
                                         </td>
@@ -68,9 +95,15 @@ function AdminFilterSelection() {
                                         </td>
                                     </tr>
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
-                                            <input type="checkbox" name="check" />
-                                        </td>
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>OnePlus</label>
                                         </td>
@@ -79,9 +112,15 @@ function AdminFilterSelection() {
                                         </td>
                                     </tr>
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
-                                            <input type="checkbox" name="check" />
-                                        </td>
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>Oppo</label>
                                         </td>
@@ -92,9 +131,15 @@ function AdminFilterSelection() {
 
                                     {/* ------- */}
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
-                                            <input type="checkbox" name="check" />
-                                        </td>
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>Apple</label>
                                         </td>
@@ -103,9 +148,15 @@ function AdminFilterSelection() {
                                         </td>
                                     </tr>
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
-                                            <input type="checkbox" name="check" />
-                                        </td>
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>Samsung</label>
                                         </td>
@@ -114,9 +165,15 @@ function AdminFilterSelection() {
                                         </td>
                                     </tr>
                                     <tr className="AdminFilterSelection_tr">
-                                        <td className="AdminFilterSelection_td_col1">
-                                            <input type="checkbox" name="check" />
-                                        </td>
+                                        <th className="AdminFilterSelection_th_col1">
+                                            <label className="AdminFilterSelection_checkbox">
+                                                {/* <input type="checkbox"/> */}
+
+                                                <input type="checkbox" checked="check" />
+
+                                                <span className="AdminFilterSelection_checkmark"></span>
+                                            </label>
+                                        </th>
                                         <td className="AdminFilterSelection_td_col2">
                                             <label>Vivo</label>
                                         </td>

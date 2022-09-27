@@ -5,16 +5,13 @@ import  { HashRouter, Routes, Route } from "react-router-dom";
 
 
 
-import LatestProducts11 from './LatestProducts11.js';
-import LatestProducts22 from './LatestProducts22.js'
-
-
+// import LatestProducts from './LatestProducts.js';
 
 
 // import Examplecheck from './Examplecheck.js';
-import ExmReapeatCom11 from './ExmReapeatCom11.js';
+// import ExmReapeatCom11 from './ExmReapeatCom11.js';
 // import Landing from '../src/pages/landing.js';
-import ExCheckbox from './ExCheckbox.js';
+// import ExCheckbox from './ExCheckbox11.js';
 
 
 
@@ -25,7 +22,8 @@ function Navigation() {
              
          
                 <Route path = "/" element = {<LatestProducts11/>}></Route>
-                <Route path = "/LatestProducts22" element = {<LatestProducts22/>}></Route>
+                <Route path = "/LatestProducts" element = {<LatestProducts/>}></Route>
+                
         
                 
 
