@@ -1,0 +1,43 @@
+create schema hekto
+---------------------
+
+table:-
+
+create table tbluserrole:
+-------------------------
+create table tbluserrole (
+	id int not null Auto_increment,
+    txtuserrole varchar(50),
+    primary key(id)
+    )
+
+insert tbluserrole:
+-------------------
+insert into tbluserrole (txtuserrole) 
+values ('user'),('admin'),('manager');   
+
+
+
+create table tblusers:-
+---------------------
+
+create table tblusers (
+	id int not null auto_increment,
+    txtfirstname varchar(50),
+    txtlastname varchar(50),
+    txtemail varchar(50),
+    txtpassword varchar(50),
+    txtrepassword varchar(50),
+    refuserroleid int,
+    primary key(id),
+    foreign key (refuserroleid) references tbluserrole(id)
+    )
+
+ insert into tblusers:-
+-------------------------
+	 insert into tblusers (txtfirstname,txtlastname,txtemail,txtpassword,txtrepassword,refuserroleid)
+   	 values ('manu','jijo','asd@gmail.com','asd','asd',1),
+		  ('sanu','rahul','zxc@gmail.com','zxc','zxc',1)
+
+
+    select id from tblusers where txtemail  && txtpassword
