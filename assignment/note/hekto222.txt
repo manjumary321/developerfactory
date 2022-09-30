@@ -41,3 +41,7 @@ create table tblusers (
 1, manu, jijo, asd@gmail.com, asd, asd, 1
 2, sanu, rahul, zxc@gmail.com, zxc, zxc, 1
 
+# id, txtfirstname, txtlastname, txtemail, txtpassword, txtrepassword, refuserroleid
+3, manu, jijo, asd@gmail.com, asd, asd, 1
+4, veena, gopi, dds@gmail.com, dds, dds, 1
+5, viji, thomas, poi@gmail.com, poi', poi, 1

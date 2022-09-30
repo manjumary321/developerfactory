@@ -39,5 +39,26 @@ create table tblusers (
    	 values ('manu','jijo','asd@gmail.com','asd','asd',1),
 		  ('sanu','rahul','zxc@gmail.com','zxc','zxc',1)
 
-
+---------------------------------------------------------------------------
     select id from tblusers where txtemail  && txtpassword
+-----------------------------------------------------------------------------
+create table tblproduct:-
+---------------------------
+
+create table tblproduct (
+id int not null auto_increment,
+txtproductname varchar(50),
+txtcode int,
+txtprice varchar(50),
+featured boolean,
+latest boolean,
+trending boolean,
+primary key(id)
+)
+------------
+ insert tblproduct:-
+
+  insert into tblproduct (txtproductname,txtcode,txtprice,featured) 
+  values ('Cantilever chair','Y523201','$42.00','1');
+
+----------------------------

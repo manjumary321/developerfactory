@@ -24,9 +24,10 @@ app.post("/addition", (req, res) => {
 
 //  -----------connection------------
 var con = mysql.createConnection({
-    host: "database-1.c2ptdumfetep.us-west-2.rds.amazonaws.com",
-    user: "admin",
-    password: "password123",
+   
+    host:"localhost",
+    user: "root",
+    password: "password",
     database: "hekto",
 });
 
@@ -39,12 +40,35 @@ con.connect(function (err) {
     }
 })
 
+//  -----------signup/Register/insert------------
+
+app.post("/signupRegister", (req, res) => {
+    // console.log(req)
+    var userfirstname = req.body.userfirstname;
+    var userlastname = req.body.userlastname;
+    var useremail = req.body.useremail;
+    var userpassword = req.body.userpassword;
+    var userrepassword = req.body.userrepassword;
+    var refuserroleid = req.body.refuserroleid;
+    // var id = req.body.id;
+    var sql ="insert into tblusers (txtfirstname,txtlastname,txtemail,txtpassword,txtrepassword,refuserroleid) values ('"+userfirstname+"','" +userlastname+"','" +useremail+"','"+userpassword+"''','"+userrepassword+"','"+refuserroleid+"' )";
+
+    con.query(sql,function(err,result){
+        if(err)throw (err)
+        res.send(result);
+        console.log("1 record Register");
+    })
+   
+   
+});
 
 
 
-//  -----------signup/update------------
 
-app.post("/signupupdate", (req, res) => {
+
+//  -----------signup/Edit/update------------
+
+app.post("/signupEdit", (req, res) => {
     // console.log(req)
     var userfirstname = req.body.userfirstname;
     var userlastname = req.body.userlastname;
@@ -61,23 +85,20 @@ app.post("/signupupdate", (req, res) => {
         console.log("1 record updated");
     })
    
-   
 });
 
 
 
-
-
-
 //  -----------login/select------------
+
 app.post("/Loginselect",(req,res)=>{
     var useremail = req.body.useremail;
     var userpassword = req.body.userpassword;
-    var sql ="select id from tblusers where txtemail = '" + useremail + "'and txtpassword = '" + userpassword + "'";
+    var sql ="select id from tblusers where txtemail = '" + useremail + "'&& txtpassword = '" + userpassword + "'";
     con.query(sql,function(err,result){
         if (err) { 
         console.log(err);
-        res.send(err)
+        res.send(err);
     }
       else {
         console.log(result);
@@ -87,7 +108,24 @@ app.post("/Loginselect",(req,res)=>{
     })
 })
 
+//  -----------products with filter/select------------
 
+app.post("/signupEdit", (req, res) => {
+    // console.log(req)
+    var productname = req.body.productname;
+    var code = req.body.code;
+    var price = req.body.price;
+    var featured = req.body.featured;
+    var id = req.body.id;
+    var sql ="update tblusers set txtfirstname ='" + userfirstname+ "',txtlastname ='" + userlastname+ "',txtemail ='" + useremail + "', txtpassword ='" + userpassword + "', txtrepassword ='" +userrepassword + "', refuserroleid=' " +refuserroleid + "' where id ='" + id +  " ' ";
+
+    con.query(sql,function(err,result){
+        if(err)throw (err)
+        res.send(result);
+        console.log("1 record updated");
+    })
+   
+});
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);

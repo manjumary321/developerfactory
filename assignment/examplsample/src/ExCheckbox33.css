@@ -1,0 +1,129 @@
+
+
+.ExCheckbox33_outer{
+    width: 25%;
+    /* background-color: bisque; */
+    flex-direction: column;
+}
+.ExCheckbox33_header{
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+.ExCheckbox33_header label{
+    color: #292C58;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-weight: 400; */
+    font-size: 20px;
+    line-height: 30px;
+    /* border-bottom: 1px solid black; */
+    padding-right: 10px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ExCheckbox33_ProdBrand{
+    /* width: 55%; */
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.ExCheckbox33_check{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.ExCheckbox33_check_row{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.ExCheckbox33_check_row label {
+  width: 90%;
+  padding-left: 10px;
+  color: #7E81A2;
+  font-family: lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+}
+.ExCheckbox33_check_row input{
+    visibility: hidden;
+    cursor: pointer;
+}
+.greekmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:#E5E0FC;
+  /* border-radius:5px; */
+}
+.ExCheckbox33_check_row:hover input ~ .greekmark{
+    background-color:#603EFF;
+  }
+
+  .greekmark:before {
+    content: "";
+    position: absolute;
+    color:#603EFF;
+    /* display: none; */
+  }
+
+   /* Create the mark/indicator (hidden when not checked) */
+.greekmark:after {
+    content: "";
+    position: absolute;
+    border: solid #603EFF
+    /* display: none; */
+  }
+
+  /* Show the mark when checked */
+.ExCheckbox33_check_row ~ .greekmark:after {
+    display: block;
+  }
+  
+  .ExCheckbox33_check_row .greekmark:before {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #603EFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  /* Style the mark/indicator */
+.ExCheckbox33_check_row .greekmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    /* border: solid white; */
+    border: solid #603EFF;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  .ExCheckbox33_check_row:hover .greekmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
