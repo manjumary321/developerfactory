@@ -66,9 +66,115 @@ Response:
     "protocol41": true,
     "changedRows": 1
 }
------------------------------------
-API Name:
+-------------------------------------------------------------------------------
+API Name:Getproductwithfilter               //only featured viewed
 Request:
+{type:featured}
+
+{
+    "featured":"1"
+}
+
 Response:
 
+[
+    {
+        "txtproductname": "Cantilever chair",
+        "txtcode": "Y523202",
+        "txtprice": "$42.00"
+    },
+    {
+        "txtproductname": "Cantilever1 chair",
+        "txtcode": "Y523203",
+        "txtprice": "$42.00"
+    }
+]
+
 -----------------------------------
+API Name:Getproductwithfilterall
+
+Request:
+
+{
+    "type":"featured"
+
+}
+
+Response:
+
+[
+    {
+        "txtproductname": "Cantilever chair",
+        "txtcode": "Y523202",
+        "txtprice": "$42.00"
+    },
+    {
+        "txtproductname": "Cantilever1 chair",
+        "txtcode": "Y523203",
+        "txtprice": "$42.00"
+    }
+]
+
+----
+Request:
+{
+    "type":"trending"
+
+}
+
+Response:
+
+[
+    {
+        "txtproductname": "revolving chair",
+        "txtcode": "J987201",
+        "txtprice": "42.00"
+    },
+    {
+        "txtproductname": "executive chair",
+        "txtcode": "J456202",
+        "txtprice": "46.00"
+    }
+]
+
+----
+Request:
+{
+    "type":"latest"
+
+}
+
+Response:
+[
+    {
+        "txtproductname": "ergonomic chair",
+        "txtcode": "Z234201",
+        "txtprice": "45.00"
+    },
+    {
+        "txtproductname": "swivel chair",
+        "txtcode": "Z234202",
+        "txtprice": "40.00"
+    },
+    {
+        "txtproductname": "guest chair",
+        "txtcode": "W323455",
+        "txtprice": "45.00"
+    },
+    {
+        "txtproductname": "ergonomic chair",
+        "txtcode": "Z234201",
+        "txtprice": "45.00"
+    },
+    {
+        "txtproductname": "swivel chair",
+        "txtcode": "Z234202",
+        "txtprice": "40.00"
+    },
+    {
+        "txtproductname": "guest chair",
+        "txtcode": "W323455",
+        "txtprice": "45.00"
+    }
+]
+---------------------------------------------------------------

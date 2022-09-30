@@ -45,3 +45,97 @@ create table tblusers (
 3, manu, jijo, asd@gmail.com, asd, asd, 1
 4, veena, gopi, dds@gmail.com, dds, dds, 1
 5, viji, thomas, poi@gmail.com, poi', poi, 1
+----------------------------------------------------------------------------------------
+
+    select id from tblusers where txtemail  && txtpassword
+-----------------------------------------------------------------------------
+create table tblproduct:-
+---------------------------
+
+create table tblproduct (
+id int not null auto_increment,
+txtproductname varchar(50),
+txtcode int,
+txtprice varchar(50),
+featured boolean,
+latest boolean,
+trending boolean,
+primary key(id)
+)
+------------
+ insert tblproduct-featured:-
+----------------------------
+
+  insert into tblproduct (txtproductname,txtcode,txtprice,featured) 
+  values ('Cantilever chair','Y523201','$42.00','1');
+
+----------------------------
+
+ALTER TABLE tblproduct MODIFY
+txtcode varchar(255);
+ALTER TABLE tblproduct MODIFY
+ txtproductname varchar(255); 
+ 
+ ALTER TABLE tblproduct MODIFY
+ txtprice varchar(255);
+ ALTER TABLE tblproduct MODIFY
+ featured varchar(1);
+  ALTER TABLE tblproduct MODIFY
+ latest varchar(1);
+  ALTER TABLE tblproduct MODIFY
+ trending varchar(1);
+
+-------------------------------------------------------
+
+ select txtproductname,txtcode,txtprice from tblproduct where featured=1;
+
+----------------------------------------------------------------------------
+insert into tblproduct -trending:-
+----------------------------------
+
+  insert into tblproduct (txtproductname,txtcode,txtprice,trending) 
+  values ('revolving chair','J987201','42.00','1'),
+		 ('executive chair','J456202','46.00','1');
+
+------------------------------------------------------------------------------
+insert into tblproduct-latest:-
+---------------------------------
+
+insert into tblproduct (txtproductname,txtcode,txtprice,latest) 
+  values ('ergonomic chair','Z234201','45.00','1'),
+		 ('swivel chair','Z234202','40.00','1'),
+         ('guest chair','W323455','45.00','1');
+		 
+		 
+---------------------------------------------------------------------------------------------
+
+# id, txtproductname, txtcode, txtprice, featured, latest, trending
+1, Cantilever chair, Y523201, $42.00, , , 
+2, Cantilever chair, Y523202, $42.00, 1, , 
+3, Cantilever1 chair, Y523203, $42.00, 1, , 
+4, ergonomic chair, Z234201, 45.00, , 1, 
+5, swivel chair, Z234202, 40.00, , 1, 
+6, guest chair, W323455, 45.00, , 1, 
+7, ergonomic chair, Z234204, 45.00, , 1, 
+8, swivel chair, Z234205, 40.00, , 1, 
+9, guest chair, W323456, 45.00, , 1, 
+10, revolving chair, J987201, 42.00, , , 1
+11, executive chair, J456202, 46.00, , , 1
+		 
+		 
+---------------------------------------------------------------
+ select txtproductname,txtcode,txtprice from tblproduct where latest=1;
+ # txtproductname, txtcode, txtprice
+swivel chair, Z234202, 40.00
+swivel chair, Z234202, 40.00
+guest chair, W323455, 45.00
+guest chair, W323455, 45.00
+ergonomic chair, Z234201, 45.00
+ergonomic chair, Z234201, 45.00
+-----------------------------------------------------------------------		 
+
+select txtproductname,txtcode,txtprice from tblproduct where trending=1;
+
+revolving chair	J987201	42.00
+executive chair	J456202	46.00
+--------------------------------------------------------------------------------------

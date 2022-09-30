@@ -49,4 +49,8 @@ CREATE TABLE `tblsprints` (
   foreign key (refProjectOwner) references tblusers(id)
   )
   
+  --------------------------------------------
+  
+  SELECT sp.txtSprintName,sp.dtActStartDate,sp.dtActEndDate,ta.id,ta.txtTitle,tu.txtUserName  from ((tblsprints sp join tbltasks ta on sp.id=ta.refSprintId)join tblusers tu on ta.refAssignee=tu.id
+  
   

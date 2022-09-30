@@ -56,9 +56,46 @@ trending boolean,
 primary key(id)
 )
 ------------
- insert tblproduct:-
+ insert tblproduct-featured:-
+----------------------------
 
   insert into tblproduct (txtproductname,txtcode,txtprice,featured) 
   values ('Cantilever chair','Y523201','$42.00','1');
 
 ----------------------------
+
+ALTER TABLE tblproduct MODIFY
+txtcode varchar(255);
+ALTER TABLE tblproduct MODIFY
+ txtproductname varchar(255); 
+ 
+ ALTER TABLE tblproduct MODIFY
+ txtprice varchar(255);
+ ALTER TABLE tblproduct MODIFY
+ featured varchar(1);
+  ALTER TABLE tblproduct MODIFY
+ latest varchar(1);
+  ALTER TABLE tblproduct MODIFY
+ trending varchar(1);
+
+-------------------------------------------------------
+
+ select txtproductname,txtcode,txtprice from tblproduct where featured=1;
+
+----------------------------------------------------------------------------
+insert into tblproduct -trending:-
+----------------------------------
+
+  insert into tblproduct (txtproductname,txtcode,txtprice,trending) 
+  values ('revolving chair','J987201','42.00','1'),
+		 ('executive chair','J456202','46.00','1');
+
+------------------------------------------------------------------------------
+insert into tblproduct-latest:-
+---------------------------------
+
+insert into tblproduct (txtproductname,txtcode,txtprice,latest) 
+  values ('ergonomic chair','Z234201','45.00','1'),
+		 ('swivel chair','Z234202','40.00','1'),
+         ('guest chair','W323455','45.00','1');
+
