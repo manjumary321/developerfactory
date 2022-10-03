@@ -134,4 +134,37 @@ output:
 
 ------------------------------------------------------------------
 
+create table tblblogs:-
+=========================
+
+create table tblblogs (
+	id int not null auto_increment,
+    txtuser varchar(255),
+    txttitle varchar(255),
+    txtdescr varchar(255),
+    createddate date,
+    primary key(id)
+       
+)
+
+
+ ALTER TABLE tblblogs MODIFY
+ createddate datetime;
+
+insert  tblblogs:-
+----------------
+
+ insert into tblblogs (txtuser,txttitle,txtdescr,createddate) 
+ values
+	('Saber Ali','Top esssential Trends in 2021','More off this less hello samlande lied much
+over tightly circa horse taped mightly','2022-10-3 13:10:10');
+
+select txtuser,txttitle,txtdescr,createddate from tblblogs where id='1';
+
+output:-
+------
+
+# txtuser		 txttitle									 txtdescr								 createddate
+Saber Ali, 	Top esssential Trends in 2021,   More off this less hello samlande lied muchover tightly circa horse taped mightly     , 2022-10-03 13:10:10
+
 

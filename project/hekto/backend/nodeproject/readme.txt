@@ -195,11 +195,22 @@ Response:
 ]
 -------------------------------------
 
-API Name:
+API Name:GetBlogs            //viewed
+    
 
 Request:
+        {
+             "id":"1"
+        }
 
-Response:
+Response:[
+    {
+        "txtuser": "Saber Ali",
+        "txttitle": "Top esssential Trends in 2021",
+        "txtdescr": "More off this less hello samlande lied much\nover tightly circa horse taped mightly",
+        "createddate": "2022-10-03T07:40:10.000Z"
+    }
+]
 
 -------------------------
 

@@ -161,8 +161,6 @@ app.post("/Getproductwithfilterall", (req, res) => {
 app.post("/GetCategories", (req, res) => {
     // console.log(req)
 
-    // var catename = req.body.catename;
-    // var cateprice = req.body.cateprice;
     var id = req.body.id
 
     var sql = "select txtcatename,txtcateprice from tblcategories where id='"+id+"'";
@@ -171,6 +169,23 @@ app.post("/GetCategories", (req, res) => {
         if (err) throw (err)
         res.send(result);
         console.log("result Categories");
+    })
+
+});
+
+//  -----------GetBlogs/select------------
+
+app.post("/GetBlogs", (req, res) => {
+    // console.log(req)
+
+      var id = req.body.id
+
+    var sql = "select txtuser,txttitle,txtdescr,createddate from tblblogs where id='"+id+"'";
+
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("result Blogs");
     })
 
 });
