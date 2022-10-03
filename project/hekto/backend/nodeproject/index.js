@@ -155,6 +155,26 @@ app.post("/Getproductwithfilterall", (req, res) => {
 
 });
 
+
+//  -----------GetCategories/select------------
+
+app.post("/GetCategories", (req, res) => {
+    // console.log(req)
+
+    // var catename = req.body.catename;
+    // var cateprice = req.body.cateprice;
+    var id = req.body.id
+
+    var sql = "select txtcatename,txtcateprice from tblcategories where id='"+id+"'";
+
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("result Categories");
+    })
+
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });

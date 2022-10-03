@@ -1,10 +1,10 @@
 create schema hekto
----------------------
+====================
 
 table:-
 
-create table tbluserrole:
--------------------------
+create table tbluserrol:
+=======================
 create table tbluserrole (
 	id int not null Auto_increment,
     txtuserrole varchar(50),
@@ -19,7 +19,7 @@ values ('user'),('admin'),('manager');
 
 
 create table tblusers:-
----------------------
+=====================
 
 create table tblusers (
 	id int not null auto_increment,
@@ -42,8 +42,9 @@ create table tblusers (
 ---------------------------------------------------------------------------
     select id from tblusers where txtemail  && txtpassword
 -----------------------------------------------------------------------------
+
 create table tblproduct:-
----------------------------
+=======================
 
 create table tblproduct (
 id int not null auto_increment,
@@ -98,4 +99,39 @@ insert into tblproduct (txtproductname,txtcode,txtprice,latest)
   values ('ergonomic chair','Z234201','45.00','1'),
 		 ('swivel chair','Z234202','40.00','1'),
          ('guest chair','W323455','45.00','1');
+
+
+----------------------------------------------------------------------
+
+create table tblcategories:-
+==========================
+
+create table tblcategor (
+	id int not null auto_increment,
+    txtcatename varchar(255),
+    txtcateprice varchar(255),
+    primary key(id)
+ 	)
+    
+insert into tblcategories:
+-----------------------
+
+insert into tblcategories (txtcatename,txtcateprice)
+values ('Mini LCW Chair',56.00),
+('mini IKEA chair',57.00),
+('Mini LCW Chair1',54.00)
+
+
+-------------------------------
+
+output:
+-------
+
+# id, txtcatename, txtcateprice
+1, Mini LCW Chair, 56.00
+2, mini IKEA chair, 57.00
+3, Mini LCW Chair1, 54.00
+
+------------------------------------------------------------------
+
 

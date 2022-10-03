@@ -139,3 +139,30 @@ select txtproductname,txtcode,txtprice from tblproduct where trending=1;
 revolving chair	J987201	42.00
 executive chair	J456202	46.00
 --------------------------------------------------------------------------------------
+
+create table tblcategories:-
+---------------------------
+
+create table tblcategor (
+	id int not null auto_increment,
+    txtcatename varchar(255),
+    txtcateprice varchar(255),
+    primary key(id)
+ 	)
+    
+	--------
+insert into tblcategories:-
+--------------------------	
+	
+	insert into tblcategories (txtcatename,txtcateprice)
+values ('Mini LCW Chair',56.00),
+('mini IKEA chair',57.00),
+('Mini LCW Chair1',54.00)
+
+output:
+# id, txtcatename, txtcateprice
+1, Mini LCW Chair, 56.00
+2, mini IKEA chair, 57.00
+3, Mini LCW Chair1, 54.00
+
+---------------------------------

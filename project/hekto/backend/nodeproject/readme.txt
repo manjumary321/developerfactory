@@ -178,3 +178,63 @@ Response:
     }
 ]
 ---------------------------------------------------------------
+
+API Name:GetCategories     //viewed
+
+Request:
+{
+    "id":"2"
+}
+Response:
+
+[
+    {
+        "txtcatename": "mini IKEA chair",
+        "txtcateprice": "57.00"
+    }
+]
+-------------------------------------
+
+API Name:
+
+Request:
+
+Response:
+
+-------------------------
+
+
+API Name:
+
+Request:
+
+Response:
+
+-------------------------
+
+
+API Name:
+
+Request:
+
+Response:
+
+-------------------------
+
+
+API Name:
+
+Request:
+
+Response:
+
+-------------------------
+
+
+API Name:
+
+Request:
+
+Response:
+
+-------------------------
