@@ -66,7 +66,7 @@ app.post("/signupRegister", (req, res) => {
 
 
 
-//  -----------signup/Edit/update------------
+//  -----------ProfileUpdate/signup/Edit------------
 
 app.post("/signupEdit", (req, res) => {
     // console.log(req)
@@ -232,9 +232,9 @@ app.post("/InsertAddress", (req, res) => {
 
 });
 
-//  -----------ProfileUpdate------------
+//  -----------AddressUpdate------------
 
-app.post("/ProfileUpdate", (req, res) => {
+app.post("/AddressUpdate", (req, res) => {
     // console.log(req)
     var userid = req.body.userid;
     var userfirstname = req.body.userfirstname;
@@ -245,17 +245,32 @@ app.post("/ProfileUpdate", (req, res) => {
     var usercountry = req.body.usercountry;
     var userpostcode = req.body.userpostcode;
     var id = req.body.id;
-    var sql = "update tbladdress set txtfirstname ='" + userfirstname + "',txtlastname ='" + userlastname + "',txtaddress ='" + useraddress + "', txtpassword ='" + userpassword + "', txtrepassword ='" + userrepassword + "', refuserroleid=' " + refuserroleid + "' where id ='" + id + " ' ";
+    var sql = "update tbladdress set refuserid ='" + userid + "',txtfirstname ='" + userfirstname + "',txtlastname ='" + userlastname + "',txtaddress ='" + useraddress + "', txtappaend ='" + userappaend + "', txtcity ='" + usercity + "', txtcountry=' " + usercountry + "' ,txtpostcode='" + userpostcode + "' where id ='" + id + " ' ";
 
     con.query(sql, function (err, result) {
         if (err) throw (err)
         res.send(result);
-        console.log("1 record updated");
+        console.log("1 record Address updated");
     })
 
 });
 
+//  -----------GetBlogs/select------------
 
+app.post("/GetAddress", (req, res) => {
+    // console.log(req)
+
+      var id = req.body.id
+
+    var sql = "select * from tbladdress where id='"+id+"'";
+
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("result Address Veiwed");
+    })
+
+});
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);

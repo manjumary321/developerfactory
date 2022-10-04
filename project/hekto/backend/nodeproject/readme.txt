@@ -42,7 +42,7 @@ Response:
 }
 
 -----------------------------------
-API Name: signupEdit
+API Name: signupEdit                //ProfileUpdate
 Request:
 {
     "userfirstname":"veena",
@@ -273,20 +273,61 @@ Response:
 -------------------------
 
 
-API Name:
+API Name: AddressUpdate
 
 Request:
+{
+
+    "userid":"5",
+    "userfirstname":"maria ",
+    "userlastname":"seby",
+    "useraddress":"ooty cottage",
+    "userappaend":"hjkj",
+    "usercity":"Tvm",
+    "usercountry":"india",
+    "userpostcode":"690876",
+    "id":"3"
+    
+}
 
 Response:
+{
+    "fieldCount": 0,
+    "affectedRows": 1,
+    "insertId": 0,
+    "serverStatus": 2,
+    "warningCount": 0,
+    "message": "(Rows matched: 1  Changed: 1  Warnings: 0",
+    "protocol41": true,
+    "changedRows": 1
+}
 
 -------------------------
 
 
-API Name:
+API Name: GetAddress
 
 Request:
 
+{
+    "id":"1"
+}
+
 Response:
+
+[
+    {
+        "id": 1,
+        "refuserid": 3,
+        "txtfirstname": "manu",
+        "txtlastname": "jijo",
+        "txtaddress": "hill quater",
+        "txtappaend": "employee",
+        "txtcity": "kochi",
+        "txtcountry": "india",
+        "txtpostcode": "678908"
+    }
+]
 
 -------------------------
 
