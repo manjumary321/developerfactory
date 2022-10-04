@@ -215,12 +215,61 @@ Response:[
 -------------------------
 
 
-API Name:
+API Name:GetRelatedProducts
 
 Request:
+{
+    "productA":"3"
+}
 
 Response:
 
+[
+    {
+        "id": 3,
+        "productB": 3
+    },
+    {
+        "id": 4,
+        "productB": 12
+    },
+    {
+        "id": 5,
+        "productB": 9
+    }
+]
+
+-------------------------
+
+
+API Name:InsertAddress
+
+Request:
+
+{
+
+    "userid":"4",
+    "userfirstname":"veena ",
+    "userlastname":"gopi",
+    "useraddress":"ukken",
+    "userappaend":"other",
+    "usercity":"thissur",
+    "usercountry":"india",
+    "userpostcode":"680123"    
+}
+
+Response:
+
+{
+    "fieldCount": 0,
+    "affectedRows": 1,
+    "insertId": 2,
+    "serverStatus": 2,
+    "warningCount": 0,
+    "message": "",
+    "protocol41": true,
+    "changedRows": 0
+}
 -------------------------
 
 
@@ -241,6 +290,13 @@ Response:
 
 -------------------------
 
+API Name:
+
+Request:
+
+Response:
+
+-------------------------
 
 API Name:
 

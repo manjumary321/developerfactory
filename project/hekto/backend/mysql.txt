@@ -168,3 +168,55 @@ output:-
 Saber Ali, 	Top esssential Trends in 2021,   More off this less hello samlande lied muchover tightly circa horse taped mightly     , 2022-10-03 13:10:10
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+create table tblrelatedproduct:-
+==============================
+
+create table tblrelatedproduct(
+     id int not null auto_increment,
+     productA int ,
+     productB int ,
+     primary key(id)
+     )
+     
+
+
+insert  tblrelatedproduct :-
+----------------------------
+     
+     insert into tblrelatedproduct (productA,productB)
+     values (1,3),(2,9),(3,3),(3,12),(3,9),(2,6)
+output:-
+# id, productA, productB
+1,	  1,		 3
+2,	  2,		 9
+3,	  3, 		 3
+4,	  3, 		12
+5,	  3,		 9
+6, 	  2, 		6
+
+--------------
+
+ select id ,productB from tblrelatedproduct where productA=3;
+
+output:-
+------
+# id, productB
+3, 3
+4, 12
+5, 9
+
+
+----------------------------------------------------------------------------------------------
+     select tblproduct.txtproductname,tblproduct.txtprice,tblrelatedproduct.productB from tblproduct 
+     join tblrelatedproduct on tblproduct.id=tblrelatedproduct.productA
+
+output:-
+# txtproductname, txtprice, productB
+Cantilever chair, $42.00, 3
+Cantilever chair, $42.00, 9
+Cantilever1 chair, $42.00, 3
+Cantilever1 chair, $42.00, 12
+Cantilever1 chair, $42.00, 9
+Cantilever chair, $42.00, 6
+

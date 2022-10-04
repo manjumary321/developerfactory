@@ -190,6 +190,73 @@ app.post("/GetBlogs", (req, res) => {
 
 });
 
+//  -----------GetBlogs/select------------
+
+app.post("/GetRelatedProducts", (req, res) => {
+    // console.log(req)
+
+      var productA = req.body.productA
+
+    var sql = "select id ,productB from tblrelatedproduct where productA='"+productA+"'";
+
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("result RelatedProducts");
+    })
+
+});
+
+//  -----------InsertAddress------------
+
+app.post("/InsertAddress", (req, res) => {
+    // console.log(req)
+    var userid = req.body.userid;
+    var userfirstname = req.body.userfirstname;
+    var userlastname = req.body.userlastname;
+    var useraddress = req.body.useraddress;
+    var userappaend = req.body.userappaend;
+    var usercity = req.body.usercity;
+    var usercountry = req.body.usercountry;
+    var userpostcode = req.body.userpostcode;
+
+   
+    var sql = "insert into tbladdress (refuserid,txtfirstname,txtlastname,txtaddress,txtappaend,txtcity,txtcountry,txtpostcode) values ('"+userid+"','" + userfirstname + "','" + userlastname + "','" + useraddress + "','" + userappaend + "','" + usercity + "','" + usercountry + "','"+userpostcode+"')";
+
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("1 record Insert Address");
+    })
+
+
+});
+
+//  -----------ProfileUpdate------------
+
+app.post("/ProfileUpdate", (req, res) => {
+    // console.log(req)
+    var userid = req.body.userid;
+    var userfirstname = req.body.userfirstname;
+    var userlastname = req.body.userlastname;
+    var useraddress = req.body.useraddress;
+    var userappaend = req.body.userappaend;
+    var usercity = req.body.usercity;
+    var usercountry = req.body.usercountry;
+    var userpostcode = req.body.userpostcode;
+    var id = req.body.id;
+    var sql = "update tbladdress set txtfirstname ='" + userfirstname + "',txtlastname ='" + userlastname + "',txtaddress ='" + useraddress + "', txtpassword ='" + userpassword + "', txtrepassword ='" + userrepassword + "', refuserroleid=' " + refuserroleid + "' where id ='" + id + " ' ";
+
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("1 record updated");
+    })
+
+});
+
+
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
