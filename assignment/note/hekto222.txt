@@ -281,3 +281,50 @@ create table tbladdress (
    output:-
    # id, refuserid, txtfirstname, txtlastname,  txtaddress,  txtappaend, txtcity, txtcountry, txtpostcode
     1, 	   3,   	  manu,		   jijo,        hill quater,   employee,   kochi,    india,     678908
+---------------------
+
+-------
+select * from tbladdress where id='3';
+# id,	 refuserid,	 txtfirstname, txtlastname, 	txtaddress, txtappaend, txtcity, txtcountry, txtpostcode
+  3		5		maria 	seby		ooty cottage	hjkj	Tvm	 	india		690876
+
+------------
+select * from tbladdress 
+
+# id,	 refuserid,	 txtfirstname,	 txtlastname,	 txtaddress,	 txtappaend, 	txtcity,	 txtcountry, txtpostcode
+1,		 3,		 manu, 		jijo,		 hill quater,	 employee, 		kochi,        india, 		678908
+2, 		4, 		veena ,		 gopi, 	 ukken,		 other,	      thissur,      india, 		680123
+3, 		5, 		maria ,		 seby,	 ooty cottage,     hjkj, 		Tvm,          india,		 690876
+----------------------
+create table tblsingleprod:-
+=============================
+
+ create table tblsingleprod (
+     id int not null auto_increment,
+     refproductid int, 
+     txtproductdescr varchar(255),
+     primary key (id),
+     foreign key(refproductid) references tblproduct(id)
+     
+     )
+	 
+  insert into tblsingleprod (refproductid,txtproductdescr) values ('1','sgfdsdd'),('3','hygg'),('4','kllkl');
+  -------------
+  select tblproduct.txtproductname,tblsingleprod.txtproductdescr
+from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id
+
+[
+    {
+        "txtproductname": "Cantilever chair",
+        "txtproductdescr": "sgfdsdd"
+    },
+    {
+        "txtproductname": "Cantilever chair",
+        "txtproductdescr": "hygg"
+    },
+    {
+        "txtproductname": "Cantilever1 chair",
+        "txtproductdescr": "kllkl"
+    }
+]
+--------

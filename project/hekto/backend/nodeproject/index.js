@@ -272,6 +272,24 @@ app.post("/GetAddress", (req, res) => {
 
 });
 
+
+//  -----------GetSingleProduct/select------------
+
+app.post("/GetSingleProduct", (req, res) => {
+    // console.log(req)
+
+      var id = req.body.id
+
+    // var sql = "select * from tblsingleprod where id='"+id+"'";
+    // var sql ="select tblproduct.txtproductname,tblsingleprod.refproductid,tblsingleprod.txtproductdescr from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id"
+    var sql="  select tblproduct.txtproductname,tblsingleprod.txtproductdescr,tblproduct.txtprice from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id where tblproduct.id='"+id+"'; "
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("result single product Veiwed");
+    })
+
+});
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });

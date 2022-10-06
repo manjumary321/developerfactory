@@ -42,7 +42,7 @@ Response:
 }
 
 -----------------------------------
-API Name: signupEdit                //ProfileUpdate
+API Name: signupEdit                //ProfileUpdate  //Edit
 Request:
 {
     "userfirstname":"veena",
@@ -215,7 +215,7 @@ Response:[
 -------------------------
 
 
-API Name:GetRelatedProducts
+API Name:GetRelatedProducts             //viewed
 
 Request:
 {
@@ -273,7 +273,7 @@ Response:
 -------------------------
 
 
-API Name: AddressUpdate
+API Name: AddressUpdate             //Edit
 
 Request:
 {
@@ -302,15 +302,15 @@ Response:
     "changedRows": 1
 }
 
--------------------------
+------------------------------------------------------------------------------------
 
 
-API Name: GetAddress
+API Name: GetAddress            //viewed
 
 Request:
 
 {
-    "id":"1"
+    "id":"1"                //from tblsingleprod.id
 }
 
 Response:
@@ -331,13 +331,71 @@ Response:
 
 -------------------------
 
-API Name:
+API Name: GetSingleProduct
 
 Request:
+{
+    "id":"1"                //from tblsingleprod.id
+}
 
 Response:
 
--------------------------
+[
+    {
+        "id": 1,
+        "refproductid": 2,
+        "txtproductdescr": "sgfdsddss"
+    }
+]
+--
+
+Request:
+{
+    "id":"2"                //from tblsingleprod.id
+}
+Response:
+
+[
+    {
+        "id": 2,
+        "refproductid": 3,
+        "txtproductdescr": "hygg"
+    }
+]
+----
+Request:
+{
+    "id":"1"       //from tblproduct.id
+}
+Response:
+
+[
+    {
+       [
+    {
+        "txtproductname": "Cantilever chair",
+        "txtproductdescr": "sgfdsdd",
+        "txtprice": "$42.00"
+    }
+]
+    }
+]
+
+--------
+Request:
+{
+     "id":"3"       //from tblproduct.id
+}
+Response:
+[
+    {
+        "txtproductname": "Cantilever1 chair",
+        "txtproductdescr": "kllkl",
+        "txtprice": "$42.00"
+    }
+]
+
+-------------------------------------------------------------------------------
 
 API Name:
 

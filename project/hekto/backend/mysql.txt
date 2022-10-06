@@ -220,3 +220,59 @@ Cantilever1 chair, $42.00, 12
 Cantilever1 chair, $42.00, 9
 Cantilever chair, $42.00, 6
 
+
+-----------------------------------------------------------------------
+
+create table tbladdress:-
+=======================
+
+create table tbladdress (
+     id int not null auto_increment,
+     refuserid int,
+     txtfirstname varchar(225),
+     txtlastname varchar(225),
+     txtaddress varchar(225),
+     txtappaend varchar(255),
+     txtcity varchar(225),
+     txtcountry varchar(225),
+     txtpostcode varchar(50),
+     primary key(id),
+     foreign key (refuserid) references tblusers(id)
+     )
+  
+--------------
+insert into tbladdress:-
+----------------------
+  insert into tbladdress (refuserid,txtfirstname,txtlastname,txtaddress,txtappaend,txtcity,txtcountry,txtpostcode)
+   values ('3','manu','jijo','hill quater','employee','kochi','india',678908)
+output:-
+
+# id, refuserid, txtfirstname, txtlastname,  txtaddress,  txtappaend, txtcity, txtcountry, txtpostcode
+1, 	   3,   	manu,		   jijo,      hill quater,   employee,   kochi,    india,     678908
+
+
+-------
+select * from tbladdress where id='3';
+# id,	 refuserid,	 txtfirstname, txtlastname, 	txtaddress, txtappaend, txtcity, txtcountry, txtpostcode
+  3		5		maria 	seby		ooty cottage	hjkj	Tvm	 	india		690876
+
+------------
+select * from tbladdress 
+
+# id,	 refuserid,	 txtfirstname,	 txtlastname,	 txtaddress,	 txtappaend, 	txtcity,	 txtcountry, txtpostcode
+1,		 3,		 manu, 		jijo,		 hill quater,	 employee, 		kochi,        india, 		678908
+2, 		4, 		veena ,		 gopi, 	 ukken,		 other,	      thissur,      india, 		680123
+3, 		5, 		maria ,		 seby,	 ooty cottage,     hjkj, 		Tvm,          india,		 690876
+----------------------
+create table tblsingleprod:-
+========================
+
+
+ create table tblsingleprod (
+     id int not null auto_increment,
+     refproductid int, 
+     txtproductdescr varchar(255),
+     primary key (id),
+     foreign key(refproductid) references tblproduct(id)
+     
+     )
