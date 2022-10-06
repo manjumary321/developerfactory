@@ -311,7 +311,7 @@ create table tblsingleprod:-
   insert into tblsingleprod (refproductid,txtproductdescr) values ('1','sgfdsdd'),('3','hygg'),('4','kllkl');
   -------------
   select tblproduct.txtproductname,tblsingleprod.txtproductdescr
-from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id
+from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id where id=
 
 [
     {
@@ -328,3 +328,47 @@ from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id
     }
 ]
 --------
+
+GetSingleProduct:
+-------------------
+
+  select tblproduct.txtproductname,tblsingleprod.txtproductdescr,tblproduct.txtprice
+from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id where tblproduct.id=1;
+
+# txtproductname, txtproductdescr, txtprice
+Cantilever chair, sgfdsdd, $42.
+
+------------------------
+
+create table tblcart:-
+=====================
+
+create table tblcart (
+	id int not null  auto_increment,
+    refprodid int,
+    refsingleprodid int,
+    txtquantity varchar(1),
+    txttotal varchar(50),
+    primary key(id),
+    foreign key(refprodid) references tblproduct(id),
+    foreign key( refsingleprodid ) references tblsingleprod(id)
+)
+
+insert into tblcart (refsingleprodid,txtquantity,txttotal)
+values ('1','2','84.00');
+
+GetCartList:-
+-------------
+
+SELECT
+    pd.txtproductname as productname,
+    pd.txtprice as price,
+    ct.txtquantity as quantity,
+    ct.txttotal
+FROM 
+    tblcart ct
+    JOIN tblsingleprod spd  ON ct.id = spd.id
+    JOIN tblproduct pd ON spd.id =pd.id where ct.id='1';
+	
+	# productname,     price,    quantity, txttotal
+     Cantilever chair, $42.00,      1,       42.00

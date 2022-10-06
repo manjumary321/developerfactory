@@ -397,10 +397,40 @@ Response:
 
 -------------------------------------------------------------------------------
 
-API Name:
+API Name: GetCartList             //viewed
 
 Request:
 
+{
+    "id":"1"
+}
+
 Response:
 
--------------------------
+[
+    {
+        "productname": "Cantilever chair",
+        "price": "$42.00",
+        "quantity": "1",
+        "txttotal": "42.00"
+    }
+]
+---
+Request:
+
+{
+    "id":"2"
+}
+
+Response:
+
+[
+    {
+        "productname": "Cantilever chair",
+        "price": "$42.00",
+        "quantity": "2",
+        "txttotal": "84.00"
+    }
+]
+
+---------------------------------------

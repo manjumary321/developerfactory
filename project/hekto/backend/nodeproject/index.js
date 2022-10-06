@@ -290,6 +290,27 @@ app.post("/GetSingleProduct", (req, res) => {
     })
 
 });
+
+//  -----------GetCartList/select------------
+
+app.post("/GetCartList", (req, res) => {
+    // console.log(req)
+
+      var id = req.body.id
+
+    // var sql = "select * from tblsingleprod where id='"+id+"'";
+    // var sql ="select tblproduct.txtproductname,tblsingleprod.refproductid,tblsingleprod.txtproductdescr from tblproduct join tblsingleprod on tblproduct.id=tblsingleprod.id"
+    var sql="SELECT pd .txtproductname as productname,pd.txtprice as price,ct.txtquantity as quantity,ct.txttotal FROM tblcart ct JOIN tblsingleprod spd  ON ct.id = spd.id JOIN tblproduct pd ON spd.id =pd.id where ct.id='"+id+"'; "
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("result Cart Veiwed");
+    })
+
+});
+
+
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
