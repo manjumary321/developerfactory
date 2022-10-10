@@ -372,3 +372,31 @@ FROM
 	
 	# productname,     price,    quantity, txttotal
      Cantilever chair, $42.00,      1,       42.00
+	 
+------------------------------------------------------------------------------------------------
+create table tblorder:-
+=====================
+
+create table tblorder(
+id int not null auto_increment,
+refuserid int,
+refaddressid int,
+refcartid int,
+orderdate date,
+primary key (id),
+foreign key(refuserid) references tblusers(id),
+foreign key(refaddressid) references tbladdress(id),
+foreign key(refcartid) references tblcart(id)
+)
+	 
+---
+--------
+insert into tblorder (refuserid,refaddressid,refcartid,orderdate) 
+values ('3','1','1','2022-10-02');
+
+ouput:-
+-----
+# id, refuserid, refaddressid, refcartid, orderdate
+  1,     3,           1,            1,    2022-10-02
+----------
+

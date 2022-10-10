@@ -51,7 +51,7 @@ app.post("/signupRegister", (req, res) => {
     var userrepassword = req.body.userrepassword;
     var refuserroleid = req.body.refuserroleid;
     // var id = req.body.id;
-    var sql = "insert into tblusers (txtfirstname,txtlastname,txtemail,txtpassword,txtrepassword,refuserroleid) values ('" + userfirstname + "','" + userlastname + "','" + useremail + "','" + userpassword + "''','" + userrepassword + "','" + refuserroleid + "' )";
+    var sql = "insert into tblusers (txtfirstname,txtlastname,txtemail,txtpassword,txtrepassword,refuserroleid) values ('" + userfirstname + "','" + userlastname + "','" + useremail + "','" + userpassword + "','" + userrepassword + "','" + refuserroleid + "' )";
 
     con.query(sql, function (err, result) {
         if (err) throw (err)
@@ -308,6 +308,28 @@ app.post("/GetCartList", (req, res) => {
     })
 
 });
+
+//  -----------OrderInsert------------
+
+app.post("/OrderInsert", (req, res) => {
+    // console.log(req)
+    // var orderid = req.body.orderid;
+    var userid1 = req.body.userid1;
+    var addressid = req.body.addressid ;
+    var cartid = req.body.cartid;
+    var orderdate = req.body.orderdate;
+       
+    var sql = "insert into tblorder(refuserid,refaddressid,refcartid,orderdate) values ('"+userid1+"','" + addressid + "','" + cartid + "','" + orderdate + "')";
+
+    con.query(sql, function (err, result) {
+        if (err) throw (err)
+        res.send(result);
+        console.log("1 record Order Insert");
+    })
+
+
+});
+
 
 
 
